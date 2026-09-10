@@ -1,0 +1,28 @@
+:root {
+  --ground: #f5f2ec;
+  --surface: #ffffff;
+  --ink: #141412;
+  --ink-2: #4a4740;
+  --muted: #8a857a;
+  --rule: #dad5cb;
+  --accent: #b4441f;
+  --ok: #2f6b3f;
+  --bad: #a3322a;
+  --warn: #9a6a12;
+  --radius: 6px;
+  --content-width: 1200px;
+  font-variant-numeric: tabular-nums;
+}
+[data-theme="dark"] {
+  --ground: #11110f;
+  --surface: #1b1a17;
+  --ink: #ece8df;
+  --ink-2: #b3aea3;
+  --rule: #2e2c27;
+  --accent: #e28a64;
+  --ok: #5fa872;
+  --bad: #e0715f;
+  --warn: #d9a441;
+}
+[data-product="munshi"] { --accent: #1f5c4a; }
+[data-theme="dark"][data-product="munshi"] { --accent: #80b59e; }
