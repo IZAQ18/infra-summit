@@ -9,6 +9,9 @@ LineProof must pass track-access, pretrained-baseline and observe-act-verify
 feasibility gates before implementation. The full online requirements are not yet
 confirmed. Loadout remains a possible alternative subject to its own eligibility checks.
 
+**Feasibility checkpoint:** G1 is blocked on the official task/starter/model and
+usable required resources. G2/G3 have not started. See [the evidence and unblock conditions](docs/FEASIBILITY.md).
+
 ## Run in three commands
 
 Requires Python 3.11+; no dependencies or credentials needed for these checks.
