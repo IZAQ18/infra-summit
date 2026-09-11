@@ -1,10 +1,13 @@
-# Infra Summit · Loadout (provisional)
+# Infra Summit · LineProof (provisional)
 
-Planned: compare measured model deployments against a latency and accuracy budget.
+Proposed: two simulated robot arms complete one manipulation job, reject actions
+based on stale observations, and verify the outcome. See the [product requirements](docs/PRD.md).
 
 **Current state: foundation scaffold.** The shared tool runtime and its tests work.
 There is no hardware adapter, model benchmark, dashboard or deployed demo yet.
-Loadout remains provisional until the full sponsor challenge confirms remote eligibility.
+LineProof must pass track-access, pretrained-baseline and observe-act-verify
+feasibility gates before implementation. The full online requirements are not yet
+confirmed. Loadout remains a possible alternative subject to its own eligibility checks.
 
 ## Run in three commands
 
@@ -48,8 +51,8 @@ Hero screenshot, demo URL and video: pending a working application.
 
 ## Next slice
 
-Confirm track requirements; choose one supported model and one available sponsor
-target; record a real compile/profile result; validate its metrics and provenance.
-Cross-device comparisons and a deployment manifest follow that first result.
+Confirm the full online track and free resources; run its compatible pretrained
+baseline; then record one real observe-act-verify cycle. Continue LineProof only
+if those gates pass. See [the PRD](docs/PRD.md) for requirements and proposed tests.
 
 Built by [IZAQ18](https://github.com/IZAQ18) · 2026 · MIT
