@@ -1,39 +1,24 @@
 # LineProof PRD review
 
-11 September 2026 (PKT) · Review of [PRD version 0.1](PRD.md)
+12 September 2026 · Review of [PRD v0.2](PRD.md) and [feasibility/resource plan](FEASIBILITY.md)
 
-**Documentation is ready for review. Implementation feasibility is unresolved.** This note records a document review, not a robot test, eligibility determination or product validation.
+**Official-brief reconciliation is complete; implementation feasibility is unresolved.** This is a documentation review, not an eligibility pass, model run or robot result.
 
-## Main decisions
+## Corrections from version 0.1
 
-- One handoff-and-place job is proposed only if the official starter and compatible pretrained policy support it. Otherwise the PRD must be revised around one supported bimanual job.
-- Actual VLA control and the event's accepted multimodal reasoning path need execution evidence. Scripted motion and recorded replay cannot satisfy those requirements.
-- The supervisor rejects stale actions, checks fresh post-action camera evidence, permits one recovery replan and otherwise stops. Hidden simulator state is restricted to scenario preparation, fault injection and scoring.
-- The comparison uses the same policy and matched held-out scenarios. It preserves baseline safeguards and reports unsuccessful attempts, false completion claims, recovery, stops, latency and overhead.
-- Five expected-stop scenarios are included in the all-episode success denominator. A correct stop is reported as stop behavior, never as completed manipulation. The completion target uses a separately disclosed, predeclared eligible subset.
-- Intel/OpenVINO remains conditional on rules and actual compatibility. Local inference measurements cannot substitute for any required sponsor-device benchmark.
+- Replace handoff-only submission scope with full drawer/cutlery/plate/cup table-setting; retain handoff only as an initial development slice.
+- Permit ACT plus an executed camera/instruction reasoning component. A provided pretrained starter is not an organizer requirement. ACT is not relabelled as an end-to-end VLA.
+- Require final simulation, inference and benchmarks on Core Ultra Series 2/3. The local i5 is development-only; Qualcomm/SiMa onsite routes are not online fallbacks.
+- Include official 10-seed randomized task/video evidence and training/fine-tuning, evaluation, inference and benchmark code deliverables. Internal outcome targets do not waive official deliverables.
+- Distinguish project observation/scoring boundaries, timing ceilings, geometry tolerances and success targets from organizer rules. Preserve late-response invalidation, fresh visual evidence, one recovery, honest stop and matched evaluation requirements.
+- Pin inspected source/model candidates and licenses, identify random-weight ACT test material, reconcile Python 3.12/LeRobot 0.6.0 with the workshop's separate Python 3.11 setup, and quantify an unexecuted training proposal.
 
-## Review findings resolved
+## Remaining risks
 
-1. Removed the stale statement about the README's prior direction.
-2. Distinguished action-completion acknowledgement from command dispatch before post-action verification.
-3. Required verification-frame coverage across the dwell interval and acknowledged the limits of sampled visual evidence.
-4. Added explicit evidence for the event's multimodal reasoning requirement; retrospective captions do not qualify.
-5. Clarified success denominators so intentionally unrecoverable cases do not pressure the implementation to mislabel stops.
+The selected candidate still needs a full scene, original demonstrations/teacher, learned task checkpoint, dependency resolution, tested multimodal decisions and an actually usable Core Ultra host. Neither a general VLM nor an ALOHA checkpoint establishes dinner-table competence. Teacher/oracle assistance must be disclosed and separated from learned evaluation. A short pilot may fail; its fixed cost ceiling cannot become an unbounded training project.
 
-## Documentation checks
+## Review scope
 
-Passed: LP-01 through LP-13 are unique and their references resolve; Markdown fences and table widths are consistent; whitespace and relative-link checks pass; PKT/UTC deadline conversions agree; public-content and credential-pattern scans found no matches. The tracked diff whitespace check also passed. The only files authored in this review are PRD.md and PRD_REVIEW.md. Markdown structure was checked without a rendered-layout test.
+Reviewed files: PRD.md, FEASIBILITY.md, PRD_REVIEW.md and README.md. Checks cover stable/unique LP identifiers, Markdown fences/tables, relative links, whitespace, deadline conversions, consistency of gate status, source provenance, estimates versus measurements and accidental private content. Executed checks passed: all 13 LP IDs are unique and ordered; Markdown fences/tables and relative links are valid; data-budget arithmetic and diff whitespace checks pass; the four reviewed files contain no matched private-path or credential patterns. PKT/UTC deadlines and gate status were reviewed for consistency. Markdown structure was checked without a rendered-layout test. The final publication handoff records the commit hash. No product test or benchmark is appropriate for these documentation-only changes; no code changed.
 
-Primary event announcements and research abstracts were inspected during drafting; the full track specification and authenticated submission form were not available. The general submission-guide link is only a checklist reference, not verified event-specific requirements. Link-form checks do not establish access to authenticated resources.
-
-All LP-01 through LP-12 requirements remain proposed, and LP-13 is deferred. No acceptance criterion or feasibility gate is marked passed. Numerical outcome thresholds and timing budgets are targets requiring calibration and evidence. No product tests or benchmarks were run in this documentation phase.
-
-## Unresolved go/no-go items
-
-- Official online brief, starter revision, exact supported task and compatible pretrained checkpoint.
-- Enrollment/eligibility, mandatory hardware/runtime, permitted free local or remote access and resource limits.
-- Accepted multimodal reasoning architecture, observable task predicates, coordinated action/stop contracts and feasible inference timing.
-- Live judging expectations, any mandated sponsor-device benchmark and the final submission fields.
-
-The next phase consists of the three bounded feasibility blocks in the PRD: requirements/access, actual baseline, then observe–act–verify with required inference. Each block is at most 45 minutes. None has been completed by writing these documents. No implementation, dependency installation, commit or push is part of this review.
+G1 remains unresolved, G2/G3 remain unstarted, LP-01 through LP-12 remain unpassed and LP-13 remains deferred. The 11 September review is preserved in git history; its provisional rules no longer govern the plan.

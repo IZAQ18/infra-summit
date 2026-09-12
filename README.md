@@ -1,20 +1,26 @@
 # Infra Summit · LineProof (provisional)
 
-Proposed: two simulated robot arms complete one manipulation job, reject actions
-based on stale observations, and verify the outcome. See the [product requirements](docs/PRD.md).
+Proposed: two simulated SO-101 arms set a dinner table through a learned ACT policy
+and camera/instruction reasoning, with stale-action rejection and visual verification.
+See the [product requirements](docs/PRD.md).
 
-**Current state: foundation scaffold.** The shared tool runtime and its tests work.
-There is no hardware adapter, model benchmark, dashboard or deployed demo yet.
-LineProof must pass track-access, pretrained-baseline and observe-act-verify
-feasibility gates before implementation. The full online requirements are not yet
-confirmed. Loadout remains a possible alternative subject to its own eligibility checks.
+**Current state: foundation scaffold.** No robotics policy, simulator integration,
+model benchmark, dashboard or deployed demo has been executed.
 
-**Feasibility checkpoint:** G1 is blocked on the official task/starter/model and
-usable required resources. G2/G3 have not started. See [the evidence and unblock conditions](docs/FEASIBILITY.md).
+The official brief is now resolved: a full multi-step dinner-table task, 10 randomized
+seeds, and final MuJoCo/AI inference and benchmarking on Core Ultra Series 2/3 are required.
+ACT is an allowed policy option; an organizer-supplied pretrained starter is not required.
+The local i5 laptop does not satisfy the final hardware requirement.
+
+**G1 remains unresolved** on usable mandatory compute and an executable scene/data/policy
+path. The concrete candidate is upstream SO-101 MJCF + Studio ACT/LeRobot data + SmolVLM2-256M
+reasoning, with a bounded task-training pilot still unexecuted. G2/G3 have not started.
+See [sources, resource budget and next steps](docs/FEASIBILITY.md).
 
 ## Run in three commands
 
-Requires Python 3.11+; no dependencies or credentials needed for these checks.
+Foundation checks require Python 3.11+ and no dependencies or credentials.
+The proposed robotics stack separately requires Python 3.12; see FEASIBILITY.md.
 
 ```sh
 git clone https://github.com/IZAQ18/infra-summit.git
@@ -54,8 +60,9 @@ Hero screenshot, demo URL and video: pending a working application.
 
 ## Next slice
 
-Confirm the full online track and free resources; run its compatible pretrained
-baseline; then record one real observe-act-verify cycle. Continue LineProof only
-if those gates pass. See [the PRD](docs/PRD.md) for requirements and proposed tests.
+Resolve usable Core Ultra access and the pinned scene/data/training plan; then validate
+the 12-joint scene, a bounded learned-policy pilot and three full-task baseline attempts.
+A handoff smoke test alone is not the dinner-table submission. See [the feasibility
+record](docs/FEASIBILITY.md) for the execution order and stop conditions.
 
 Built by [IZAQ18](https://github.com/IZAQ18) · 2026 · MIT

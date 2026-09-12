@@ -1,104 +1,92 @@
 # LineProof feasibility record
 
-11 September 2026 · G1 requirements and free-access investigation
+12 September 2026 · G1 official-brief reconciliation and resource plan
 
-**Decision: G1 BLOCKED. G2 and G3 NOT STARTED.** An authoritative online task specification, accepted starter/checkpoint and usable permitted compute allocation have not been established. This is an access/requirements decision, not evidence that robotics cannot run on the laptop. No simulator, policy, sponsor inference or product benchmark was executed.
+**G1 UNRESOLVED; G2/G3 NOT STARTED.** The official online brief is available and ACT is permitted. The remaining blockers are usable Core Ultra Series 2/3 compute and a working full-task scene/data/policy path. No robotics dependency was installed, model downloaded, training started, simulation executed or product benchmark measured in this investigation.
 
-Investigation began at **21:07:58 PKT (16:07:58 UTC)**. The evidence checkpoint below was taken at **21:12:58 PKT (16:12:58 UTC)**, five minutes into the original 45-minute maximum block. The block has not been restarted. Research stopped short of speculative installation because the essential requirements remain unresolved; the remaining work in this block is documenting, checking and publishing this record.
+This replaces the current decision in the 11 September record, preserved in git history at `7f52a6e862a061e6c5100dee5bfedd3d58155bce`. That investigation could not retrieve the full brief. Its missing-brief, mandatory-organizer-starter and ACT exclusion assumptions are superseded. A supplied pretrained checkpoint is a preferred shortcut, not an organizer prerequisite.
 
-## Purpose and decision rule
+## Authoritative requirements and implications
 
-Determine whether the [provisional PRD](PRD.md) has an eligible, zero-spend path to an actual pretrained bimanual baseline. The distinction is between finding robotics software and establishing a usable, accepted task/model/compute combination. A general library, an advertised free cloud service or another participant's demo does not establish that combination.
+The [official five-page online brief](https://drive.google.com/file/d/1xSisqTQUAFQiLOpjLZrCVTCsQi4bMCpO/view) was read through the event's linked PDF on 12 September. Pages 1–2 permit ACT/related imitation policies alongside VLA options and require multimodal reasoning for multi-step dinner-table manipulation. Pages 3–4 require final MuJoCo and AI inference plus benchmarks on Core Ultra Series 2/3; physical arms are unnecessary and Intel supplies no training compute. Page 4 requires scene/randomization, training/fine-tuning/evaluation/inference code, setup, an Intel benchmark script, architecture/README and video evidence across 10 randomized seeds. See [PRD v0.2](PRD.md) for task scope, rubric and acceptance criteria.
 
-Proceed to G2 only after the full online rules, supported task, policy compatibility, permitted inference location and actual mandatory resource access are verified. No purchase, system installation, new training project or integration with another sponsor is part of this investigation.
+The brief's pouring sequence is an example; our chosen full task uses drawer/cutlery/plate/cup placement and a cup handoff. The prior handoff-only proposal is a development slice, not the submission. Numerical tolerances and success targets are our choices. The organizer workflow includes simulator state; separating privileged scoring from model inputs is our integrity design, not a quoted organizer prohibition.
 
-## Gate status
+The online track links [Intel Hack-a-thon Resources](https://docs.openedgeplatform.intel.com/dev/edge-ai-suites/robotics-ai-suite/resources/hackathon_resources.html) and the [official workshop](https://www.youtube.com/watch?v=HRG5qJPH8EQ). The resource page describes Ubuntu 24.04, Python 3.11, OpenVINO 2026.3 and LeRobot/XPU tooling. Its OS/driver installation instructions were not executed. Workshop video fetch was throttled; no unseen transcript content is asserted here. The event-linked PDF and inspected source files provide the findings below.
 
-| Gate | Status | Evidence / reason |
+## Concrete candidate and inspected artifacts
+
+These are source candidates, not a tested compatible installation. Preserve upstream licenses and notices when importing assets/code and mark modifications.
+
+| Component | Exact source/version | Verified and remaining work |
 |---|---|---|
-| G1: official requirements and free access | BLOCKED | Primary announcements confirm the broad online route. Exact task, starter, accepted pretrained model and mandatory execution/judging conditions remain unresolved; usable mandatory resource access is unverified. |
-| G2: actual pretrained baseline | NOT STARTED | G1 prerequisite not met. No environment installation, model download or baseline episode. |
-| G3: observe → act → verify | NOT STARTED | No G2 baseline. No inference, action execution, verification or stop claim. |
+| SO-101 geometry | [SO-ARM100 revision eecbe3e](https://github.com/TheRobotStudio/SO-ARM100/tree/eecbe3e0a9ebb23e25ad7b2759b03884c6660903/Simulation/SO101); full SHA `eecbe3e0a9ebb23e25ad7b2759b03884c6660903` | Read `scene.xml`, `so101_new_calib.xml` and repository Apache-2.0 license. Single arm has six radian position actuators and 13 referenced mesh files. Add a namespaced second arm, drawer/items/cameras and scorer; there is no ready dinner-table environment here. |
+| ACT training/export | [Physical AI Studio revision 0388c19](https://github.com/open-edge-platform/physical-ai-studio/tree/0388c19b220fe4597da709f26010ea5642586dfe/library); full SHA `0388c19b220fe4597da709f26010ea5642586dfe` | Apache-2.0 ACT source; configurable state/action dimensions, equal-shaped camera inputs, ResNet18 initialization and action chunks. Native ACT plus OpenVINO export is the selected implementation candidate. No task-trained weights selected. |
+| Dataset dependency | [LeRobot 0.6.0](https://pypi.org/project/lerobot/0.6.0/) | Studio pins this version; Python >=3.12. Wheel SHA256 `b38a564fbc441d98380576863bf68635dde5fc2c42ddc2a39d0486640dc9e9a8`. Apache-2.0. Build an explicit local LeRobot-format dataset; do not upload automatically. |
+| Latest LeRobot inspected, not selected | [Revision b6ec006](https://github.com/huggingface/lerobot/tree/b6ec0060779550c0a157ae34feb89e0cf86012a8); full SHA `b6ec0060779550c0a157ae34feb89e0cf86012a8` | Its package version is 0.6.2 and requires Python >=3.12. Do not combine it with Studio's 0.6.0 pin. |
+| Reasoning model | [SmolVLM2-256M-Video-Instruct](https://huggingface.co/HuggingFaceTB/SmolVLM2-256M-Video-Instruct/tree/067788b187b95ebe7b2e040b3e4299e342e5b8fd); revision `067788b187b95ebe7b2e040b3e4299e342e5b8fd` | Apache-2.0 image/text model. Candidate for structured phase/arm-role/continue decisions, not joint actions. No task recognition or completion accuracy measured. |
+| VLM OpenVINO path | [Hugging Face/Intel export guide](https://huggingface.co/blog/openvino-vlm) | Documents Optimum conversion and INT8 weight compression of this model. Its older dependency example is not a tested lock for the selected 2026 stack. Export/processor compatibility remains a preflight check. |
+| ACT export evidence | [Pinned upstream parity test](https://github.com/open-edge-platform/physical-ai-studio/blob/0388c19b220fe4597da709f26010ea5642586dfe/library/tests/integration/test_act_openvino_parity.py) | Contains native/export action and closed-loop comparisons using `lerobot/act_aloha_sim_transfer_cube_human` in ALOHA. We inspected code, did not run it. ALOHA task success would not establish dual-SO-101 dinner compatibility. |
+| Rejected baseline shortcut | [OpenVINO/act-fp16-ov model card](https://huggingface.co/OpenVINO/act-fp16-ov) | Explicitly random weights for testing, with an example 8-dimensional state. Conversion/runtime smoke material only; never a task-trained baseline. |
 
-No PRD acceptance criterion has passed through this investigation. The PRD's proposed handoff-and-place job, numerical targets and hardware conditions remain unchanged.
+The [LeRobot ACT guide](https://huggingface.co/docs/lerobot/act) describes an approximately 80M-parameter policy and gives roughly 50 demonstrations and hours of GPU training as introductory guidance. Those are vendor examples, not our required data count, our measured training time or a guarantee for a harder multi-stage task. Base image weights do not make an untrained action head competent.
 
-## Primary-source findings
+## Environment and compute decision
 
-| Source checked | What it establishes | What it does not establish |
+Use an isolated **Python 3.12 CPU environment** for the selected Studio revision and its LeRobot 0.6.0 dependency. The [pinned package manifest](https://github.com/open-edge-platform/physical-ai-studio/blob/0388c19b220fe4597da709f26010ea5642586dfe/library/pyproject.toml) requires Python >=3.12,<3.15 and OpenVINO >=2026.3; its runtime source pin is `openvinotoolkit/physicalai@8e4021703ef43387a835c6647b993cecc069ca85`. Resolve the Studio CPU extra using its published CPU wheel index, then save the actual lock. Do not install latest LeRobot or mix this environment with the workshop's Python 3.11 environment. This is a manifest-compatible candidate, not a completed resolver/import test. The VLM export environment can be isolated if its Transformers/Optimum constraints differ; inference artifacts must preserve exact preprocessing and model revisions.
+
+Final target: an actually allocated Core Ultra Series 2/3 host running both MuJoCo and required model inference. Start with its CPU path; test iGPU only if available and compatible. NPU and INT4 are not mandatory. Record device/OS/driver, memory, remaining session time, disk and export access. Do not assume the final allocation permits or supplies training. Coordinator owns account/cloud access verification.
+
+Training candidate: the existing i5-1245U laptop with 32 GB RAM, CPU only. Availability of an isolated compatible environment, wheel resolution and useful training speed remain unmeasured. No CUDA, free GPU notebook or second machine is assumed. A desktop Python available for document work does not establish a training environment. The [Intel cloud guide](https://www.intel.com/content/www/us/en/developer/articles/guide/ai-pc-cloud-quick-user-guide.html) describes variable availability; free advertising or a portal page is not an allocation.
+
+## Observation, action and reasoning contract
+
+Proposed scene interface, to verify before collecting data:
+
+- Two RGB views at 128×128 for the initial cost pilot; model preprocessing may resize, and that cost must be counted. Input image tensors use the implementation's validated channel/order/normalization contract. Increase resolution only as a new recorded configuration if cutlery is not observable.
+- Joint vector is 12 radian positions: left then right, each `shoulder_pan, shoulder_lift, elbow_flex, wrist_flex, wrist_roll, gripper`. The SO-101 gripper is a hinge angle, not an arbitrary 0–1 aperture. Preserve source actuator limits and verify action-to-joint mapping.
+- Six phase values: open drawer, place spoon, place fork, place plate, handoff cup, place cup. Append the six-way one-hot phase code to joint state, making proposed ACT state dimension 18 and action dimension 12. Train with the same phase representation used at inference. The phase is an intended skill, not proof that the prior skill succeeded.
+- Proposed `chunk_size=10`, `n_action_steps=1`, 10 Hz control: predict ten steps but authorize only one 100 ms simulated step before the next validity boundary. This avoids treating the upstream 100-step default as our freshness contract. Actual useful cadence remains a G2 measurement.
+- SmolVLM receives current images and instruction and chooses a supported phase, arm assignment and continue/reacquire/stop response. A deterministic validator only rejects impossible transitions or invalid output; it cannot silently pick the correct next phase for the model. Store raw structured decisions and resulting phase inputs.
+- Teacher phases and exact object poses may be used in training demonstrations. During evaluation, model-selected phases and camera/proprioception inputs are used. Scoring, teacher control and evaluation control are separate interfaces. Any deterministic sequencing baseline, welded grasp aid or scripted intervention gets a separate label and metric.
+
+A phase-selector check must include changed images with the same instruction and changed supported instructions with the same image. Select ten development cases spanning phases and ambiguous/occluded states. Proposed continuation criterion is at least eight correct structured decisions and no completion claim on the ambiguous cases; failure is reported, not concealed by scripted sequencing. A VLM cannot alone certify final success; fresh post-action visual verification remains separately tested.
+
+## Quantified bounded task-training proposal — not executed
+
+This is **task training of a motor policy initialized with an image backbone**, not adaptation of an already trained dinner-table checkpoint. We have found no compatible demonstrations or competent checkpoint. The proposed demonstration source is an original MuJoCo scripted teacher using explicit geometry/IK and phase labels, solely for data generation. Writing and debugging that teacher is a major dependency; no existing teacher is claimed. Do not copy another participant's results or imply their learned policy is ours.
+
+| Item | Proposed fixed budget / check |
+|---|---|
+| Coverage | 20 complete training demonstrations plus 5 validation demonstrations, each covering all six phases. Seeds and randomization separate from final evaluation. Partial episodes are labelled and excluded from the complete-demo quota. |
+| Duration/data | At most 120 simulated seconds per demonstration, sampled at 10 Hz: 24,000 training samples, 6,000 validation samples. Two RGB 128×128 uint8 cameras imply at most 2.359 GB training + 0.590 GB validation raw image payload (decimal units), excluding metadata, video overhead and caches. |
+| Collection cost | At real-time pacing, 25×120 seconds is 50 minutes before training. At an actually measured 10× simulation/render throughput it is 5 minutes. No such throughput has been measured; a slow renderer or difficult teacher can invalidate the budget. |
+| Initial model | Studio ACT/ResNet18 configuration; batch size 4, two views, state 18/action 12, chunk 10. Keep the initial architecture fixed for the pilot. Freeze/backbone caching is a separate proposed change, not a free assumed speedup. |
+| Training cap | At most 2,000 optimizer steps **or 20 minutes elapsed training time**, whichever comes first; one configuration, no sweep. First 100 steps count toward both limits. Stop early if the first 100 steps cannot finish within 3 minutes. |
+| Resource cap | Proposed process-RAM cap 16 GB on the 32 GB laptop; stop on out-of-memory, sustained swapping, nonfinite loss or incompatible data/schema. Reserve up to 10 GB for dataset, checkpoints and exports after checking free space; dependency caches/downloads are additional and must be measured. |
+| Timing estimate | After 100 steps, use measured seconds/step plus observed checkpoint/validation overhead. 2,000 steps at 0.5 s/step is 16.7 minutes; at 2 s/step it is 66.7 minutes. These examples are arithmetic, not hardware measurements. Stop/reassess if projected work exceeds the cap; do not silently expand it. |
+| Continuation evidence | Validation action error must improve against the untrained initialization under identical normalization. Then three fresh full-task learned-policy runs must execute, with at least one complete success to pass G2. Loss improvement, teacher success or one successful phase alone cannot pass. |
+| Failure rule | If no complete teacher/data path fits the approved preparation budget, or training/resources/recognition fail the cap or criteria, retain evidence and stop. No automatic extra demonstrations, larger model or new training campaign. |
+
+The pilot is deliberately a low-cost test of whether there is a viable route. Twenty demonstrations and 2,000 steps may be insufficient for this task. This uncertainty is why G1 has not passed and why training has not begun. A failed budget test is not proof ACT is unsuitable; it establishes that this candidate path does not fit the current constraints.
+
+## Next executable sequence after prerequisites resolve
+
+1. **Resource preflight:** coordinator establishes usable Core Ultra access; finalize separate training permission/resource and available session time. Record pinned source/model/asset licenses and a compatible dependency lock. No installs or G2 until this plan and required compute are resolved.
+2. **Scene and data preparation:** compose the two-arm MJCF; add the full dinner task, scorer and randomization manifest; verify 12-joint ordering, limits, RGB observations and simulator stop. Implement the teacher and show at least one complete teacher episode before generating the dataset. Label all of this scripted preparation. It is not a learned baseline. Budget this preparation explicitly within the next authorized execution block; if it cannot fit, stop instead of hiding it as setup.
+3. **Measure the fixed pilot:** validate the 20/5 dataset split, execute the 100-step timing probe, and continue only within the 2,000-step/20-minute and memory caps. The preparation, probe, training and evaluation together must fit that block's 45-minute active-work ceiling; the training cap is not an additional allowance. Save checkpoint, config, timing and validation evidence.
+4. **Learned baseline gate:** remove teacher/oracle inputs and run three full-task attempts. Record both phase-selector behavior and learned arm motion. At least one full success is required for G2; otherwise stop. Calibrate action/observation/episode budgets only on development cases.
+5. **Export and G3:** use Studio's ACT export API and the documented VLM Optimum export path; compare reference/export outputs and development task decisions before closed-loop testing on Core Ultra. First compare reference/FP32 or FP16-compatible execution; try INT8 only if supported and quality is preserved. Then demonstrate fresh observe → reason → learned action → verify plus stale-action rejection and two-arm stop. Report actual optimization device/precision; no benchmark exists yet.
+6. **Only after gates:** implement the viewer/trace comparison and run the official 10-seed suite, additional registered fault experiments and required video/reproducibility package before freeze. All failures remain in the evidence.
+
+Steps 2–5 describe code and experiments still to be created, not commands that already work in this repository. The concrete resources and interface are identified, but demonstration production and runtime behavior are unproven. This is the remaining executable-plan gap, separate from the external Core Ultra access gap.
+
+## Current decision and bounded-work record
+
+| Gate | Status | Reason |
 |---|---|---|
-| [Organizer live dashboard](https://lablab.ai/ai-hackathons/ai-infra-summit-hackathon/live) and [Intel track page](https://lablab.ai/ai-hackathons/ai-infra-summit-hackathon?track=intel-bimanual-vla-manipulation-with-multi-modal-reasoning) | An Intel bimanual VLA track is listed. The indexed dashboard states submission closes 16 September 2026 at 23:30 PKT (18:30 UTC). | Full online technical requirements, enrollment, accepted starter or checkpoint, or final form/judging access. |
-| [Organizer Intel announcement](https://www.linkedin.com/company/lablab-ai) | The indexed company announcement distinguishes physical onsite SO-101 work from online dual SO-101 simulation in MuJoCo using VLA and multimodal reasoning. | That onsite hardware/software requirements also apply online; a specific accepted model or task. The current company feed is dynamic and did not retain the older Intel post in its directly opened excerpt. |
-| [Intel AI PC development page](https://www.intel.com/content/www/us/en/developer/topic-technology/ai-pc/download-get-started.html) | Intel advertises free AI PC Cloud access to Core Ultra hardware. | Guaranteed admission, current capacity, an assigned instance, a quota sufficient for judging or acceptance of the current laptop as a benchmark substitute. |
-| [Intel AI PC Cloud quick guide](https://www.intel.com/content/www/us/en/developer/articles/guide/ai-pc-cloud-quick-user-guide.html) | The published registration route requires a company or university email. The catalog includes Core Ultra Series 2/3; availability varies by user and capacity. The guide says requests are processed within 48 hours. | A hackathon exception, automatic approval or an actual allocation for this project. |
-| [Intel Hack-a-thon Resources](https://docs.openedgeplatform.intel.com/dev/edge-ai-suites/robotics-ai-suite/resources/hackathon_resources.html) | A published preinstalled-stack/setup reference targets Ubuntu 24.04 LTS and Core Ultra/Arc, with Python 3.11, OpenVINO 2026.3, Anomalib 2.6.0, LeRobot/PyTorch XPU and Physical AI Studio. | That this setup governs the online track, or that it supplies the dual-SO-101 task/checkpoint. Its driver, OS and reboot instructions were not executed. |
-| [Intel humanoid pipelines](https://docs.openedgeplatform.intel.com/dev/edge-ai-suites/robotics-ai-suite/software_references/humanoid/index.html) | Intel provides robotics reference pipelines, including ACT/RDT on ALOHA and a Pi0.5 VLA pipeline. | Compatibility of those embodiments/checkpoints with the online dual SO-101 task. |
-| [Hugging Face SmolVLA guide](https://huggingface.co/docs/lerobot/smolvla) | SmolVLA uses camera views, robot state and language; its guide describes adapting the base model with task data for optimal setup-specific performance. | A ready checkpoint for the proposed handoff scene, or evidence that base weights will complete it without adaptation. No training was started. |
+| G1 | UNRESOLVED | Official requirements resolved. Source/model licenses, candidate revisions and resource budget documented. Actual final compute, resolved environment and working full-task scene/data/policy path remain unverified. |
+| G2 | NOT STARTED | No installation, training pilot, learned checkpoint execution or baseline attempt. |
+| G3 | NOT STARTED | No integrated reasoning/action/verification run or Intel benchmark. |
 
-Source pages were read on 11 September 2026. Generic platform documentation is supporting evidence, not event rules. No free-service advertising was converted into an access claim.
-
-## Access states kept separate
-
-| Access stage | State at this checkpoint |
-|---|---|
-| Free Intel AI PC Cloud advertised | Verified in Intel's public development page |
-| Project eligible for its registration/access route | Not verified |
-| Instance requested by this investigation | No |
-| Instance actually allocated and reachable for this project | Not verified |
-| Required runtime/model successfully executed there | No |
-| Availability for the event's judging window | Not verified |
-
-Account identifiers, email addresses and session details are intentionally absent from this public record. No organizers were contacted and no account creation or cloud request was submitted.
-
-## Retrieval and repository checks actually performed
-
-| Check | Observed result |
-|---|---|
-| Browser surface discovery through the supported browser tool, then one retry | Both failed with `Unable to load browser request-header policy`. No browser session was inspected; empty discovery is not evidence that the user is signed out. |
-| Public lablab event/track retrieval through web tools | Indexed track/date information available; no authoritative full online brief obtained. One direct track open returned an internal retrieval error. |
-| Public event URL request using Python standard-library `urllib.request.urlopen`, 30-second timeout | HTTP 403. No authenticated cookies or alternate credentials were used. |
-| `gh search repos 'AI Infra Summit' --limit 20 --json fullName,description,url` | Returned project repositories including two participant dinner-table implementations; no official starter identified in this result set. |
-| GitHub searches for SO-101/hackathon code, an Intel SO101/MuJoCo repository, lablab bimanual repositories, and hackathon references in Physical AI Studio | No matching official online starter returned. Search absence is not proof that a starter does not exist. |
-| Official Intel documentation link traversal | Found the Hack-a-thon Resources page and the official Physical AI Studio / Physical AI runtime repositories. |
-| GitHub API reads of official repository HEADs and pinned README files | Exact revisions recorded below; read-only inspection, no clone/import/install. |
-| Local processor/GPU inventory and version commands | i5-1245U and Iris Xe reconfirmed; Python 3.14.6, Git 2.55.0.windows.3, GitHub CLI 2.96.0. No runtime compatibility or performance test. |
-
-Repository baseline at investigation start: `9a722b4bea772f90c6ae5cdc30b5155c29c5fe23`. Working tree was clean. The known development environment remains Windows 11 with about 32 GB RAM; no verified NVIDIA/WSL target. The generic Intel stack's Python 3.11 is a documented version, not the installed project runtime.
-
-### Official code references inspected
-
-- [Physical AI Studio README at 0388c19](https://github.com/open-edge-platform/physical-ai-studio/blob/0388c19b220fe4597da709f26010ea5642586dfe/README.md): policy-training, benchmark and export framework. README blob `5ed1ea8011f2bbaf10b70abcd0c31d993377f336`. No accepted event-specific task/checkpoint was established by the inspected README.
-- [Physical AI runtime README at a5e2750](https://github.com/openvinotoolkit/physicalai/blob/a5e275065f7a241a808b182bdcc31b62f6fc0a60/README.md): SO-101 robot-interface examples are available, but that does not supply a verified online simulated bimanual policy. README blob `4bd1733b160db3b9d8528c5f32acbb96c5ce2701`.
-
-These revisions were obtained using `gh api repos/OWNER/REPO/commits/HEAD`, then README content was read using the exact revision. They are inspection references, not selected dependencies. No simulator, policy checkpoint, task manifest, model license or compatible package set has been selected.
-
-### Participant leads, not authoritative requirements
-
-[Table for Two](https://github.com/suzyeth/table-for-two) describes a dinner-table task and Core Ultra target; it discloses trained ACT, scripted assistance and constraint-assisted grasping. [Bimanual dinner-table SO101](https://github.com/jianwang-ntu/bimanual-dinner-table-so101) also describes a dinner-table scenario and separates controller/policy outcomes. Their public README descriptions were inspected to look for official source links, not to adopt their interpretation or reproduce their claimed results.
-
-Observed repository HEADs: Table for Two `72ee5aaa3c939da4176347a2c14721c07c7196ab`; Bimanual dinner-table SO101 `cd04f44fb8f8f05c10f18d8950a823cf69b2a857`. These observations do not establish eligibility, claim accuracy or the versions used for their reported results. No participant code or assets were copied or run.
-
-**Implication to verify:** the required job may be broader than the PRD's one handoff. Obtain the actual brief before changing scope. These leads are insufficient to revise the approved PRD or substitute a trained participant ACT policy for the required accepted VLA.
-
-## Exact blockers and restart evidence
-
-| Blocker | Evidence needed to resolve it |
-|---|---|
-| Official online task and rules | Full organizer/sponsor brief with task, scoring, permitted scene modifications, required models/architecture, optimization/precision deliverables and live-versus-recorded judging rules |
-| Starter/checkpoint compatibility | Official or explicitly accepted starter and model links; pinned revision; checkpoint/license; documented camera, joint/action and preprocessing compatibility for the chosen bimanual task |
-| Compute route | Confirmation of required hardware/runtime and permitted local/remote inference; an actually reachable free allocation if the rules demand a device unavailable locally |
-| Participant/judging eligibility | Verified enrollment/team status and applicable online judging/submission access requirements, kept outside public account notes |
-| One-job scope | Confirmation that the selected handoff is sufficient or a PRD revision based on the official task, not participant descriptions |
-
-A request for the full brief/starter/model links, enrollment confirmation and any allocated cloud access is pending. No extra permission is needed to continue the already authorized gates once this evidence resolves G1. Waiting for it is not a gate pass.
-
-## Recommendation and next action
-
-**Hold LineProof implementation and do not start G2 yet.** Obtain the official brief and usable resource evidence first. If the track mandates inaccessible hardware, an unsupported task, or new training to obtain a baseline, record a no-go under the current zero-spend/time limits and reassess the entry with the project owner. Do not silently switch to a different sponsor, task or scripted controller.
-
-If G1 resolves, bind the PRD to the accepted task/checkpoint and execute G2 in an isolated project environment, with its own maximum 45-minute block: three fresh baseline attempts and at least one scored bimanual success, with actual inference and timing records. G3 follows only after G2 passes. Local inference evidence must remain separate from any mandated sponsor-device benchmark.
-
-The useful outcome of this block is a concrete evidence checklist and identified access risk. There is no new product functionality, no measured success rate and no basis for a winning-probability claim.
-
-## Documentation checks and handoff
-
-At **21:15:39 PKT (16:15:39 UTC)**, 7 minutes 41 seconds after the original start, the G1 decision and documentation checks were complete. Markdown/table structure, local links, whitespace, gate-status statements and scans for private paths/credential patterns passed. The only changed project files were this record and its README link. No product code changed, so no new robot or application tests were run. Publication of the reviewed documentation follows this checkpoint; the resulting commit and verified remote hash are reported in the task handoff.
+The reconciliation block began 12 September at 10:02:34 PKT (05:02:34 UTC), was interrupted, and resumed on the user's continue message. The pause does not start a second 45-minute active-work allowance. Research ends with this document review/publication; no speculative execution is added. Source reads and arithmetic are evidence about a plan, not measurements of a robot product.
