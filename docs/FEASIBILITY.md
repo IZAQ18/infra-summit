@@ -1,5 +1,9 @@
 # LineProof feasibility record
 
+## 16 September cloud access checkpoint
+
+Account and catalog access are now verified. A Core Ultra Series 3 Windows 11 instance has been requested for one week. The authenticated portal reports **Pending Review**, with a USD 0.00 hourly rate and total cost. No host has been allocated or connected. Windows 11 was the only offered image; the previously researched Ubuntu setup must not be treated as installed or directly validated here. G1 remains unresolved because usable hardware and a full-task baseline are still missing. G2/G3 have not started. No software installation, model run, benchmark or robotics success is claimed.
+
 ## 15 September recovery checkpoint
 
 G1 remains unresolved; G2/G3 have not started. The fully loaded [event schedule](https://lablab.ai/ai-hackathons/ai-infra-summit-hackathon) explicitly confirms submission closing at **16 September 23:30 PKT (18:30 UTC)**. Its online track still requires the full dual-SO-101 table-setting workflow and final Core Ultra Series 2/3 execution. Account registration or a requested instance does not establish allocated compute.
