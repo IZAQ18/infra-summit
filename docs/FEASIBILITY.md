@@ -1,5 +1,15 @@
 # LineProof feasibility record
 
+## 15 September recovery checkpoint
+
+G1 remains unresolved; G2/G3 have not started. The fully loaded [event schedule](https://lablab.ai/ai-hackathons/ai-infra-summit-hackathon) explicitly confirms submission closing at **16 September 23:30 PKT (18:30 UTC)**. Its online track still requires the full dual-SO-101 table-setting workflow and final Core Ultra Series 2/3 execution. Account registration or a requested instance does not establish allocated compute.
+
+Two additional starting points were inspected as documentation only: [MolmoAct2 SO-101 simulation](https://github.com/ataghof/molmoact2-so101-sim), a single-arm cube task whose 5B policy quickstart recommends a 24 GB GPU for training/evaluation; and [EE5108 ACT simulation](https://github.com/EE5108-DigitalTwins/lerobot_mujoco_sim), a single-arm block-to-bin collection/training/deployment recipe. Neither establishes a trained full-task bimanual baseline. No code or model from either was incorporated, no environment was installed and no robotics measurement was produced. The ACT recipe is a possible collector reference, not a reason to mix its LeRobot 0.5.x environment with the Studio candidate below.
+
+The planned feature freeze has passed with the product gates unfulfilled. Proceed only when usable required compute and a credible scene/data/policy path are established; do not treat unrelated demonstrations or other participants' submission descriptions as evidence of eligibility or our own success.
+
+## 12 September source and resource investigation
+
 12 September 2026 · G1 official-brief reconciliation and resource plan
 
 **G1 UNRESOLVED; G2/G3 NOT STARTED.** The official online brief is available and ACT is permitted. The remaining blockers are usable Core Ultra Series 2/3 compute and a working full-task scene/data/policy path. No robotics dependency was installed, model downloaded, training started, simulation executed or product benchmark measured in this investigation.
