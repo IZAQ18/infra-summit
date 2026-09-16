@@ -1,0 +1,2 @@
+# Preserve raw measurement bytes so published SHA-256 checks remain reproducible.
+/docs/evidence/*.json -text

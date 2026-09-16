@@ -9,8 +9,10 @@ Host: Intel Core i5-1245U, approximately 32 GB RAM, Windows 11 build 26200.
 Python 3.12.14. Exact package sets are in `requirements-sim.lock` and
 `requirements-policy-preflight.lock`. This laptop is not the required Core Ultra target.
 
-Source revision: recorded in the publication checkpoint; source files and raw evidence
-ship together. Run commands from the repository root:
+Executed code revision: `a1c4e765ba96700a1fc587ed37797b8becff9a3a`.
+The follow-up publication changes documentation/evidence packaging only.
+Raw measurement JSON is preserved byte-for-byte by `.gitattributes`.
+Run commands from the repository root:
 
 ```powershell
 .venv/Scripts/python.exe tools/local_smoke.py --output artifacts/local-smoke-separated
