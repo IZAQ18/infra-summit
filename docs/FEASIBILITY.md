@@ -1,5 +1,27 @@
 # LineProof feasibility record
 
+## 16 September local execution checkpoint — supersedes unexecuted setup below
+
+The user authorized bounded local work while Intel approval is pending, revising
+the previous requirement to wait for cloud allocation before any local experiment.
+Python 3.12.14 / MuJoCo 3.13.0 now run a two-arm SO101 scene on Windows 11. Both cameras,
+scripted motion, stop/reset and rejected invalid actions were exercised. Ten tests
+passed. Initial overlapping zero poses were identified and corrected; the replacement
+initial state has zero contacts. Props are primitives, with no drawer or validated grasp.
+
+A separate environment installed LeRobot 0.6.0, CPU PyTorch 2.11.0, torchvision 0.26.0
+and OpenVINO 2026.3.1. ACT with two 128x128 images, 18 state inputs and 12 action outputs
+ran with random parameters. Direct OpenVINO conversion and CPU inference passed
+numerical parity for two input fixtures at the fixed shapes. This is not the Studio
+training package, a trained checkpoint, a VLM, a task controller or final Core Ultra evidence.
+See [commands, limitations and artifacts](LOCAL_FEASIBILITY.md) and [timings](../BENCHMARKS.md).
+
+G1 remains unresolved on usable final hardware and a full-task learned route.
+G2/G3 are unpassed; no training or task evaluation was performed. The next local
+experiment should establish real contact-based manipulation and a credible full-task
+demonstration source before committing compute to learning. The old 45-minute
+scene-plus-data-plus-training plan below is unvalidated and must not be treated as an estimate.
+
 ## 16 September cloud access checkpoint
 
 Account and catalog access are now verified. A Core Ultra Series 3 Windows 11 instance has been requested for one week. The authenticated portal reports **Pending Review**, with a USD 0.00 hourly rate and total cost. No host has been allocated or connected. Windows 11 was the only offered image; the previously researched Ubuntu setup must not be treated as installed or directly validated here. G1 remains unresolved because usable hardware and a full-task baseline are still missing. G2/G3 have not started. No software installation, model run, benchmark or robotics success is claimed.

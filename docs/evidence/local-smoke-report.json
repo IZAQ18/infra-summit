@@ -1,0 +1,45 @@
+{
+  "kind": "SCRIPTED_PHYSICS_SMOKE_NOT_LEARNED_POLICY",
+  "utc": "2026-09-15T21:21:12.476882+00:00",
+  "python": "3.12.14",
+  "os": "Windows-11-10.0.26200-SP0",
+  "mujoco": "3.13.0",
+  "joint_order": [
+    "left_shoulder_pan",
+    "left_shoulder_lift",
+    "left_elbow_flex",
+    "left_wrist_flex",
+    "left_wrist_roll",
+    "left_gripper",
+    "right_shoulder_pan",
+    "right_shoulder_lift",
+    "right_elbow_flex",
+    "right_wrist_flex",
+    "right_wrist_roll",
+    "right_gripper"
+  ],
+  "actuator_count": 12,
+  "simulated_seconds": 7.999999999999341,
+  "physics_chunks": 80,
+  "chunk_steps": 50,
+  "physics_chunk_ms_p50": 4.251250000379514,
+  "physics_chunk_ms_p95": 6.419130000449513,
+  "compile_seconds": 0.2002394999999524,
+  "whole_run_wall_seconds": 22.333102999999937,
+  "initial_contacts": 0,
+  "pan_travel_rad": [
+    0.39995651211386735,
+    0.39995651211386735
+  ],
+  "stop_rejected_action": true,
+  "stop_state_unchanged": true,
+  "reset_max_error_rad": 0.0,
+  "task_success": null,
+  "learned_policy": null,
+  "artifacts": {
+    "final-front.png": "95e0ba0af974e6084d46722d5872c3a8e87b87bb9c5c41ed16bc791e17d43622",
+    "initial-front.png": "e23de36450b13bf62a67b43e5b5bc497944fd0bed27f424ba2394c5b24b45ca1",
+    "initial-side.png": "674823c7f1a420169ca7e318d8f8982280c4d3ca25c20243349475a5ee763e19",
+    "scripted-motion.gif": "59a46871b01bd9b398ba16a606fc6aef826dfd431b630c3d698b64043523745c"
+  }
+}

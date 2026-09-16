@@ -2,7 +2,7 @@
 
 Version 0.2 · 12 September 2026 (PKT) · Official-brief reconciliation
 
-**Status: proposed design, not a built or validated product.** LineProof is a working name. The repository currently contains a general tool runtime, evaluation helper, tests and design tokens. It has no robot adapter, VLA integration, product interface or product measurements. Every numerical performance threshold below is a **proposed target**, never a result.
+**Status: proposed product design, not a validated product.** As of 16 September, a local dual-SO101 physics smoke test and random-weight ACT/OpenVINO CPU preflight have executed; see [measured evidence](LOCAL_FEASIBILITY.md). There is still no learned task policy, full-task completion or product interface. Every numerical performance threshold below remains a **proposed target**, never a result.
 
 ## 1. Product decision and problem
 

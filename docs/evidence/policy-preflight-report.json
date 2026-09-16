@@ -1,0 +1,71 @@
+{
+  "kind": "RANDOM_WEIGHT_RUNTIME_PROBE_NOT_TASK_POLICY",
+  "utc": "2026-09-16T05:02:14.539227+00:00",
+  "os": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.14",
+  "versions": {
+    "torch": "2.11.0+cpu",
+    "torchvision": "0.26.0+cpu",
+    "lerobot": "0.6.0",
+    "openvino": "2026.3.1"
+  },
+  "parameters": 51569548,
+  "cpu_threads": 4,
+  "checkpoint": null,
+  "seed": 7,
+  "warmup": 1,
+  "samples": 5,
+  "state_shape": [
+    1,
+    18
+  ],
+  "camera_shapes": [
+    [
+      1,
+      3,
+      128,
+      128
+    ],
+    [
+      1,
+      3,
+      128,
+      128
+    ]
+  ],
+  "output_shape": [
+    1,
+    10,
+    12
+  ],
+  "finite": true,
+  "native_ms": [
+    56.56730000009702,
+    58.22380000017802,
+    60.633600000073784,
+    62.51890000021376,
+    60.95489999961501
+  ],
+  "task_success": null,
+  "actions_executed": 0,
+  "openvino": {
+    "device": "CPU",
+    "full_device_name": "12th Gen Intel(R) Core(TM) i5-1245U",
+    "available_devices": [
+      "CPU",
+      "GPU"
+    ],
+    "precision_hint": "f32",
+    "milliseconds": [
+      43.40010000032635,
+      40.454000000408996,
+      41.98919999998907,
+      42.649099999835016,
+      48.063899999760906
+    ],
+    "max_abs_error": 1.385807991027832e-06,
+    "changed_input_max_abs_error": 1.385807991027832e-06,
+    "changed_input_parity": true,
+    "allclose_atol_1e-4_rtol_1e-4": true
+  }
+}
