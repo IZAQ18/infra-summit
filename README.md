@@ -7,18 +7,24 @@ See the [product requirements](docs/PRD.md).
 **Current state: local physics prototype and CPU runtime preflight.** Two simulated
 SO-101 arms render and perform scripted motion on Windows. Stop/reset and input
 validation are tested. A random-weight ACT model runs natively and through OpenVINO.
-There is no learned task policy, successful manipulation, dashboard or deployed demo.
+Scripted single-arm cube manipulation now has recorded contact evidence. There is
+no learned task policy or full dinner-table workflow.
 
 ![Recorded scripted motion — not learned control](docs/evidence/scripted-motion.gif)
 
+**Latest:** [contact-based lift, carry and placement](docs/CONTACT_EXPERIMENT.md).
+Six of ten small cube perturbations passed the scripted scorer; four failed.
+This is not the required learned full-task evaluation.
+
 [Reproduce the experiment](docs/LOCAL_FEASIBILITY.md) · [Measured results](BENCHMARKS.md)
 
-The official brief is now resolved: a full multi-step dinner-table task, 10 randomized
-seeds, and final MuJoCo/AI inference and benchmarking on Core Ultra Series 2/3 are required.
-ACT is an allowed policy option; an organizer-supplied pretrained starter is not required.
-The local i5 laptop does not satisfy the final hardware requirement.
+The official brief calls for a full multi-step dinner-table task and ten randomized
+seeds. Later [track guidance permits older Intel deployment](docs/DEPLOYMENT_FALLBACK.md),
+explicitly naming an i7 CPU/iGPU as an alternative to the PDF's Core Ultra Series 2/3
+target. We therefore have a documented Intel laptop fallback; the exact i5 model
+was not individually named in that guidance. Learned policy execution is still required.
 
-**G1 remains unresolved** on usable mandatory compute and an executable scene/data/policy
+**G1 remains unresolved** on an executable full-task scene/data/policy
 path. SO-101 geometry and LeRobot ACT now have local execution evidence. The full
 Studio training stack and SmolVLM2 reasoning are still untested. No task training
 has run and the learned-baseline/complete-system gates remain unpassed.
@@ -62,7 +68,8 @@ No LLM service is configured. See `agent_core/runtime.py`.
 | Local simulation | 12 actuators, two cameras, scripted motion; stop/reset checks pass |
 | Local OpenVINO | ACT random-weight CPU conversion and numerical parity tested |
 | Learned task success | Not demonstrated |
-| Required Core Ultra benchmark | Not run |
+| Scripted cube contact trial | Verified carry and release; 6/10 small perturbations passed |
+| Core Ultra benchmark | Not run; later track guidance allows older Intel deployment |
 
 See [BENCHMARKS.md](BENCHMARKS.md) for the required evidence protocol.
 The recording above is a physics smoke test. No application demo or submission video exists.
@@ -70,7 +77,8 @@ The recording above is a physics smoke test. No application demo or submission v
 ## Next slice
 
 Validate contact-based grasp/release and a full-task demonstration source before a
-bounded learned-policy pilot. Obtain Core Ultra allocation for final execution.
+bounded learned-policy pilot. Use the documented Intel laptop deployment fallback;
+an optional NVIDIA desktop can support training after its CUDA preflight passes.
 Scripted motion and random-weight runtime checks are not the dinner-table submission.
 
 Built by [IZAQ18](https://github.com/IZAQ18) · 2026 · MIT

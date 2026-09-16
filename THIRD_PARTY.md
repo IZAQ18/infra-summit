@@ -10,7 +10,14 @@ The downloader keeps the original model, meshes and license in ignored `.cache/s
 LineProof's scene composer modifies the model in memory: it creates two copies,
 prefixes body/joint/site/actuator names, changes base placement and orientation,
 and adds a table, primitive objects, lighting and two cameras. It retains upstream
-joint ranges, inertia, actuator gains and collision geometry. The starting joint
+joint ranges, inertia and actuator gains. The default `original` collision mode
+retains upstream collision geometry. The optional `decomposed` mode replaces only
+the fixed and moving jaw collision meshes with convex pieces derived from the
+same upstream STLs using CoACD 1.0.14 (MIT package, not vendored). Those derived OBJ
+assets retain the upstream Apache-2.0 license; their source and output hashes and
+generation settings are in `simulation/collision_parts/manifest.json`. Visual
+geometry, robot inertias and servo force limits are unchanged. The decomposition
+is an approximation, not a certified geometric tolerance. The starting joint
 pose is changed to avoid inter-arm intersection. These are engineering experiments,
 not a certified digital twin or a validated dinner-task environment.
 

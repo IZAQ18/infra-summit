@@ -1,0 +1,3616 @@
+{
+  "kind": "TUNING_HISTORY_RESCORED_WITH_V3_NOT_A_SUCCESS_RATE",
+  "results": [
+    {
+      "kind": "SCRIPTED_CONTACT_PROBE_NOT_LEARNED_POLICY",
+      "utc": "2026-09-16T05:23:17.073180+00:00",
+      "mujoco": "3.13.0",
+      "configuration": {
+        "height": 0.047,
+        "offset": 0.0,
+        "close": -0.1
+      },
+      "initial_cube": [
+        -4.909085663696263e-08,
+        -0.07999995093807598,
+        0.03789224457978068
+      ],
+      "final_cube": [
+        -0.013820520767687057,
+        -0.08953227782057617,
+        0.03789224457978382
+      ],
+      "target_xy": [
+        -0.075,
+        -0.07
+      ],
+      "min_sustained_lift_m": 3.1155633628543455e-15,
+      "contact_throughout_hold": false,
+      "final_xy_error_m": 0.0642217919089555,
+      "released": true,
+      "stable": true,
+      "scripted_pick_place_passed": false,
+      "full_task_success": null,
+      "learned_policy": null,
+      "waypoint_errors": [
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 0.00013647301719194466,
+          "approach_error_rad": 0.005366753614357935
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.047
+          ],
+          "position_error_m": 0.0001364730171920247,
+          "approach_error_rad": 0.005366753614378623
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 0.0001364730171920096,
+          "approach_error_rad": 0.005366753614523433
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.13
+          ],
+          "position_error_m": 0.0004386805505635198,
+          "approach_error_rad": 0.012400496873097489
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.047
+          ],
+          "position_error_m": 0.00043868055056345577,
+          "approach_error_rad": 0.012400496873106442
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.13
+          ],
+          "position_error_m": 0.00043868055056343707,
+          "approach_error_rad": 0.012400496873115395
+        }
+      ],
+      "simulated_seconds": 19.000000000000348,
+      "wall_seconds": 65.16916450000008,
+      "uninterrupted_carry": false,
+      "supported_lower": true,
+      "scorer_version": 3,
+      "attempt": "contact-attempt-01"
+    },
+    {
+      "kind": "SCRIPTED_CONTACT_PROBE_NOT_LEARNED_POLICY",
+      "utc": "2026-09-16T05:24:23.712213+00:00",
+      "mujoco": "3.13.0",
+      "configuration": {
+        "height": 0.057,
+        "offset": 0.02,
+        "close": -0.1
+      },
+      "initial_cube": [
+        -4.909085663696263e-08,
+        -0.07999995093807598,
+        0.03789224457978068
+      ],
+      "final_cube": [
+        -0.025570150813658446,
+        -0.04553280809343387,
+        0.03789224457978382
+      ],
+      "target_xy": [
+        -0.075,
+        -0.07
+      ],
+      "min_sustained_lift_m": 3.101685575046531e-15,
+      "contact_throughout_hold": false,
+      "final_xy_error_m": 0.05515390711796587,
+      "released": true,
+      "stable": true,
+      "scripted_pick_place_passed": false,
+      "full_task_success": null,
+      "learned_policy": null,
+      "waypoint_errors": [
+        {
+          "target": [
+            0.012917452398695656,
+            -0.08356339804269453,
+            0.1151528
+          ],
+          "position_error_m": 0.00012429734103560833,
+          "approach_error_rad": 0.005136479793505781
+        },
+        {
+          "target": [
+            0.012917452398695656,
+            -0.08356339804269453,
+            0.042152800000000004
+          ],
+          "position_error_m": 0.00012429734103565216,
+          "approach_error_rad": 0.005136479793462552
+        },
+        {
+          "target": [
+            0.012917452398695656,
+            -0.08356339804269453,
+            0.1151528
+          ],
+          "position_error_m": 0.00012429734103558534,
+          "approach_error_rad": 0.00513647979331125
+        },
+        {
+          "target": [
+            -0.06225832281807795,
+            -0.07414845303597463,
+            0.1151528
+          ],
+          "position_error_m": 0.0003881584780112939,
+          "approach_error_rad": 0.011748012982614721
+        },
+        {
+          "target": [
+            -0.06225832281807795,
+            -0.07414845303597463,
+            0.042152800000000004
+          ],
+          "position_error_m": 0.0003881584780114007,
+          "approach_error_rad": 0.01174801298260527
+        },
+        {
+          "target": [
+            -0.06225832281807795,
+            -0.07414845303597463,
+            0.1151528
+          ],
+          "position_error_m": 0.00038815847801132425,
+          "approach_error_rad": 0.011748012982567469
+        }
+      ],
+      "simulated_seconds": 19.000000000000348,
+      "wall_seconds": 2.626899300000332,
+      "uninterrupted_carry": false,
+      "supported_lower": true,
+      "scorer_version": 3,
+      "attempt": "contact-attempt-02"
+    },
+    {
+      "kind": "SCRIPTED_CONTACT_PROBE_NOT_LEARNED_POLICY",
+      "utc": "2026-09-16T05:24:26.966872+00:00",
+      "mujoco": "3.13.0",
+      "configuration": {
+        "height": 0.067,
+        "offset": 0.02,
+        "close": -0.1
+      },
+      "initial_cube": [
+        -4.909085663696263e-08,
+        -0.07999995093807598,
+        0.03789224457978068
+      ],
+      "final_cube": [
+        -0.027853096928928383,
+        -0.06634311233989527,
+        0.0378922445797838
+      ],
+      "target_xy": [
+        -0.075,
+        -0.07
+      ],
+      "min_sustained_lift_m": 3.1225022567582528e-15,
+      "contact_throughout_hold": false,
+      "final_xy_error_m": 0.04728851125328062,
+      "released": true,
+      "stable": true,
+      "scripted_pick_place_passed": false,
+      "full_task_success": null,
+      "learned_policy": null,
+      "waypoint_errors": [
+        {
+          "target": [
+            0.012917452398695656,
+            -0.08356339804269453,
+            0.1151528
+          ],
+          "position_error_m": 0.00012429734103560833,
+          "approach_error_rad": 0.005136479793505781
+        },
+        {
+          "target": [
+            0.012917452398695656,
+            -0.08356339804269453,
+            0.0521528
+          ],
+          "position_error_m": 0.00012429734103567127,
+          "approach_error_rad": 0.005136479793440937
+        },
+        {
+          "target": [
+            0.012917452398695656,
+            -0.08356339804269453,
+            0.1151528
+          ],
+          "position_error_m": 0.0001242973410355474,
+          "approach_error_rad": 0.005136479793376093
+        },
+        {
+          "target": [
+            -0.06225832281807795,
+            -0.07414845303597463,
+            0.1151528
+          ],
+          "position_error_m": 0.00038815847801133103,
+          "approach_error_rad": 0.011748012982586369
+        },
+        {
+          "target": [
+            -0.06225832281807795,
+            -0.07414845303597463,
+            0.0521528
+          ],
+          "position_error_m": 0.0003881584780114582,
+          "approach_error_rad": 0.011748012982548567
+        },
+        {
+          "target": [
+            -0.06225832281807795,
+            -0.07414845303597463,
+            0.1151528
+          ],
+          "position_error_m": 0.0003881584780113966,
+          "approach_error_rad": 0.011748012982643071
+        }
+      ],
+      "simulated_seconds": 19.000000000000348,
+      "wall_seconds": 3.2245372999996107,
+      "uninterrupted_carry": false,
+      "supported_lower": true,
+      "scorer_version": 3,
+      "attempt": "contact-attempt-03"
+    },
+    {
+      "kind": "SCRIPTED_CONTACT_PROBE_NOT_LEARNED_POLICY",
+      "utc": "2026-09-16T05:24:28.162401+00:00",
+      "mujoco": "3.13.0",
+      "configuration": {
+        "height": 0.047,
+        "offset": 0.02,
+        "close": -0.1
+      },
+      "initial_cube": [
+        -4.909085663696263e-08,
+        -0.07999995093807598,
+        0.03789224457978068
+      ],
+      "final_cube": [
+        -0.11008436294919231,
+        -0.025375629610127796,
+        0.0378922445797838
+      ],
+      "target_xy": [
+        -0.075,
+        -0.07
+      ],
+      "min_sustained_lift_m": 3.1225022567582528e-15,
+      "contact_throughout_hold": false,
+      "final_xy_error_m": 0.05676483908409468,
+      "released": true,
+      "stable": true,
+      "scripted_pick_place_passed": false,
+      "full_task_success": null,
+      "learned_policy": null,
+      "waypoint_errors": [
+        {
+          "target": [
+            0.012917452398695656,
+            -0.08356339804269453,
+            0.1151528
+          ],
+          "position_error_m": 0.00012429734103560833,
+          "approach_error_rad": 0.005136479793505781
+        },
+        {
+          "target": [
+            0.012917452398695656,
+            -0.08356339804269453,
+            0.032152799999999995
+          ],
+          "position_error_m": 0.0001242973410356504,
+          "approach_error_rad": 0.005136479793376093
+        },
+        {
+          "target": [
+            0.012917452398695656,
+            -0.08356339804269453,
+            0.1151528
+          ],
+          "position_error_m": 0.0001242973410356599,
+          "approach_error_rad": 0.005136479793484167
+        },
+        {
+          "target": [
+            -0.06225832281807795,
+            -0.07414845303597463,
+            0.1151528
+          ],
+          "position_error_m": 0.0003881584780112722,
+          "approach_error_rad": 0.01174801298260527
+        },
+        {
+          "target": [
+            -0.06225832281807795,
+            -0.07414845303597463,
+            0.032152799999999995
+          ],
+          "position_error_m": 0.0003881584780113627,
+          "approach_error_rad": 0.011748012982614721
+        },
+        {
+          "target": [
+            -0.06225832281807795,
+            -0.07414845303597463,
+            0.1151528
+          ],
+          "position_error_m": 0.0003881584780113821,
+          "approach_error_rad": 0.011748012982576918
+        }
+      ],
+      "simulated_seconds": 19.000000000000348,
+      "wall_seconds": 1.1709571999999753,
+      "uninterrupted_carry": false,
+      "supported_lower": true,
+      "scorer_version": 3,
+      "attempt": "contact-attempt-04"
+    },
+    {
+      "kind": "SCRIPTED_CONTACT_PROBE_NOT_LEARNED_POLICY",
+      "utc": "2026-09-16T05:24:29.167940+00:00",
+      "mujoco": "3.13.0",
+      "configuration": {
+        "height": 0.057,
+        "offset": -0.02,
+        "close": -0.1
+      },
+      "initial_cube": [
+        -4.909085663696263e-08,
+        -0.07999995093807598,
+        0.03789224457978068
+      ],
+      "final_cube": [
+        -4.709202756775005e-08,
+        -0.07999995295298788,
+        0.03789224457978382
+      ],
+      "target_xy": [
+        -0.075,
+        -0.07
+      ],
+      "min_sustained_lift_m": 3.1363800445660672e-15,
+      "contact_throughout_hold": false,
+      "final_xy_error_m": 0.0756636768552788,
+      "released": true,
+      "stable": true,
+      "scripted_pick_place_passed": false,
+      "full_task_success": null,
+      "learned_policy": null,
+      "waypoint_errors": [
+        {
+          "target": [
+            -0.012917550580408929,
+            -0.07643650383345743,
+            0.1448472
+          ],
+          "position_error_m": 0.00015048243841011443,
+          "approach_error_rad": 0.005616788883371092
+        },
+        {
+          "target": [
+            -0.012917550580408929,
+            -0.07643650383345743,
+            0.0718472
+          ],
+          "position_error_m": 0.00015048243841008006,
+          "approach_error_rad": 0.005616788883331559
+        },
+        {
+          "target": [
+            -0.012917550580408929,
+            -0.07643650383345743,
+            0.1448472
+          ],
+          "position_error_m": 0.00015048243841005342,
+          "approach_error_rad": 0.005616788883390858
+        },
+        {
+          "target": [
+            -0.08774167718192205,
+            -0.06585154696402538,
+            0.1448472
+          ],
+          "position_error_m": 0.0004992153604770522,
+          "approach_error_rad": 0.013114173914207453
+        },
+        {
+          "target": [
+            -0.08774167718192205,
+            -0.06585154696402538,
+            0.0718472
+          ],
+          "position_error_m": 0.0004992153604770875,
+          "approach_error_rad": 0.013114173914198985
+        },
+        {
+          "target": [
+            -0.08774167718192205,
+            -0.06585154696402538,
+            0.1448472
+          ],
+          "position_error_m": 0.0004992153604769917,
+          "approach_error_rad": 0.01311417391419052
+        }
+      ],
+      "simulated_seconds": 19.000000000000348,
+      "wall_seconds": 0.9889930999997887,
+      "uninterrupted_carry": false,
+      "supported_lower": true,
+      "scorer_version": 3,
+      "attempt": "contact-attempt-05"
+    },
+    {
+      "kind": "SCRIPTED_CONTACT_PROBE_NOT_LEARNED_POLICY",
+      "utc": "2026-09-16T05:24:30.151717+00:00",
+      "mujoco": "3.13.0",
+      "configuration": {
+        "height": 0.067,
+        "offset": -0.02,
+        "close": -0.1
+      },
+      "initial_cube": [
+        -4.909085663696263e-08,
+        -0.07999995093807598,
+        0.03789224457978068
+      ],
+      "final_cube": [
+        -4.708935003708327e-08,
+        -0.0799999529557494,
+        0.03789224457978383
+      ],
+      "target_xy": [
+        -0.075,
+        -0.07
+      ],
+      "min_sustained_lift_m": 3.1363800445660672e-15,
+      "contact_throughout_hold": false,
+      "final_xy_error_m": 0.07566367685829782,
+      "released": true,
+      "stable": true,
+      "scripted_pick_place_passed": false,
+      "full_task_success": null,
+      "learned_policy": null,
+      "waypoint_errors": [
+        {
+          "target": [
+            -0.012917550580408929,
+            -0.07643650383345743,
+            0.1448472
+          ],
+          "position_error_m": 0.00015048243841011443,
+          "approach_error_rad": 0.005616788883371092
+        },
+        {
+          "target": [
+            -0.012917550580408929,
+            -0.07643650383345743,
+            0.08184720000000001
+          ],
+          "position_error_m": 0.0001504824384100572,
+          "approach_error_rad": 0.005616788883331559
+        },
+        {
+          "target": [
+            -0.012917550580408929,
+            -0.07643650383345743,
+            0.1448472
+          ],
+          "position_error_m": 0.00015048243841004008,
+          "approach_error_rad": 0.005616788883371092
+        },
+        {
+          "target": [
+            -0.08774167718192205,
+            -0.06585154696402538,
+            0.1448472
+          ],
+          "position_error_m": 0.0004992153604770533,
+          "approach_error_rad": 0.013114173914198985
+        },
+        {
+          "target": [
+            -0.08774167718192205,
+            -0.06585154696402538,
+            0.08184720000000001
+          ],
+          "position_error_m": 0.0004992153604770402,
+          "approach_error_rad": 0.013114173914207453
+        },
+        {
+          "target": [
+            -0.08774167718192205,
+            -0.06585154696402538,
+            0.1448472
+          ],
+          "position_error_m": 0.0004992153604770482,
+          "approach_error_rad": 0.013114173914207453
+        }
+      ],
+      "simulated_seconds": 19.000000000000348,
+      "wall_seconds": 0.9668093000000226,
+      "uninterrupted_carry": false,
+      "supported_lower": true,
+      "scorer_version": 3,
+      "attempt": "contact-attempt-06"
+    },
+    {
+      "kind": "SCRIPTED_CONTACT_PROBE_NOT_LEARNED_POLICY",
+      "utc": "2026-09-16T05:24:31.253972+00:00",
+      "mujoco": "3.13.0",
+      "configuration": {
+        "height": 0.047,
+        "offset": -0.02,
+        "close": -0.1
+      },
+      "initial_cube": [
+        -4.909085663696263e-08,
+        -0.07999995093807598,
+        0.03789224457978068
+      ],
+      "final_cube": [
+        -0.00026687299041442243,
+        -0.08058028755202855,
+        0.037892244579783796
+      ],
+      "target_xy": [
+        -0.075,
+        -0.07
+      ],
+      "min_sustained_lift_m": 3.094746681142624e-15,
+      "contact_throughout_hold": false,
+      "final_xy_error_m": 0.0754783595298312,
+      "released": true,
+      "stable": true,
+      "scripted_pick_place_passed": false,
+      "full_task_success": null,
+      "learned_policy": null,
+      "waypoint_errors": [
+        {
+          "target": [
+            -0.012917550580408929,
+            -0.07643650383345743,
+            0.1448472
+          ],
+          "position_error_m": 0.00015048243841011443,
+          "approach_error_rad": 0.005616788883371092
+        },
+        {
+          "target": [
+            -0.012917550580408929,
+            -0.07643650383345743,
+            0.061847200000000005
+          ],
+          "position_error_m": 0.0001504824384100324,
+          "approach_error_rad": 0.005616788883252494
+        },
+        {
+          "target": [
+            -0.012917550580408929,
+            -0.07643650383345743,
+            0.1448472
+          ],
+          "position_error_m": 0.00015048243841002284,
+          "approach_error_rad": 0.005616788883252494
+        },
+        {
+          "target": [
+            -0.08774167718192205,
+            -0.06585154696402538,
+            0.1448472
+          ],
+          "position_error_m": 0.000499215360477023,
+          "approach_error_rad": 0.013114173914173587
+        },
+        {
+          "target": [
+            -0.08774167718192205,
+            -0.06585154696402538,
+            0.061847200000000005
+          ],
+          "position_error_m": 0.0004992153604771005,
+          "approach_error_rad": 0.013114173914198985
+        },
+        {
+          "target": [
+            -0.08774167718192205,
+            -0.06585154696402538,
+            0.1448472
+          ],
+          "position_error_m": 0.0004992153604769376,
+          "approach_error_rad": 0.013114173914173587
+        }
+      ],
+      "simulated_seconds": 19.000000000000348,
+      "wall_seconds": 1.0849717000000965,
+      "uninterrupted_carry": false,
+      "supported_lower": true,
+      "scorer_version": 3,
+      "attempt": "contact-attempt-07"
+    },
+    {
+      "kind": "SCRIPTED_CONTACT_PROBE_NOT_LEARNED_POLICY",
+      "utc": "2026-09-16T10:05:05.055974+00:00",
+      "mujoco": "3.13.0",
+      "configuration": {
+        "height": 0.047,
+        "offset": 0,
+        "close": -0.1,
+        "roll": 0
+      },
+      "initial_cube": [
+        -4.909085663696263e-08,
+        -0.07999995093807598,
+        0.03789224457978068
+      ],
+      "final_cube": [
+        -0.003192635506060247,
+        -0.06129020421194901,
+        0.03789224457978381
+      ],
+      "target_xy": [
+        -0.075,
+        -0.07
+      ],
+      "min_sustained_lift_m": 3.1155633628543455e-15,
+      "contact_throughout_hold": false,
+      "final_xy_error_m": 0.07233365840488831,
+      "released": true,
+      "stable": true,
+      "scripted_pick_place_passed": false,
+      "full_task_success": null,
+      "learned_policy": null,
+      "waypoint_errors": [
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 0.0002683577320932636,
+          "approach_error_rad": 0.02627508653502176
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.047
+          ],
+          "position_error_m": 0.00018528882602896404,
+          "approach_error_rad": 0.026224788191661273
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 0.00016058468828069556,
+          "approach_error_rad": 0.026236932657021542
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.13
+          ],
+          "position_error_m": 0.00044464152037463847,
+          "approach_error_rad": 0.042037248893741774
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.047
+          ],
+          "position_error_m": 0.0001616327695005305,
+          "approach_error_rad": 0.04247745482665283
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.13
+          ],
+          "position_error_m": 0.00013545992391746022,
+          "approach_error_rad": 0.04249048322012279
+        }
+      ],
+      "simulated_seconds": 19.000000000000348,
+      "wall_seconds": 1.9894298999970488,
+      "uninterrupted_carry": false,
+      "supported_lower": true,
+      "scorer_version": 3,
+      "attempt": "contact-attempt-08"
+    },
+    {
+      "kind": "SCRIPTED_CONTACT_PROBE_NOT_LEARNED_POLICY",
+      "utc": "2026-09-16T10:05:06.832537+00:00",
+      "mujoco": "3.13.0",
+      "configuration": {
+        "height": 0.057,
+        "offset": 0,
+        "close": -0.1,
+        "roll": 0
+      },
+      "initial_cube": [
+        -4.909085663696263e-08,
+        -0.07999995093807598,
+        0.03789224457978068
+      ],
+      "final_cube": [
+        -0.00032785743504629036,
+        -0.08214991538911194,
+        0.03789224457978378
+      ],
+      "target_xy": [
+        -0.075,
+        -0.07
+      ],
+      "min_sustained_lift_m": 3.101685575046531e-15,
+      "contact_throughout_hold": false,
+      "final_xy_error_m": 0.0756541427762112,
+      "released": true,
+      "stable": true,
+      "scripted_pick_place_passed": false,
+      "full_task_success": null,
+      "learned_policy": null,
+      "waypoint_errors": [
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 0.0002683577320932636,
+          "approach_error_rad": 0.02627508653502176
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.057
+          ],
+          "position_error_m": 1.3420970185179768e-06,
+          "approach_error_rad": 0.026227220094217688
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 0.0004567943889617951,
+          "approach_error_rad": 0.026245124216854755
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.13
+          ],
+          "position_error_m": 0.0004145954821918738,
+          "approach_error_rad": 0.042063027093567004
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.057
+          ],
+          "position_error_m": 0.00017404615941762403,
+          "approach_error_rad": 0.04247762767335927
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.13
+          ],
+          "position_error_m": 0.00011398154584727694,
+          "approach_error_rad": 0.04248944968193028
+        }
+      ],
+      "simulated_seconds": 19.000000000000348,
+      "wall_seconds": 1.735788899997715,
+      "uninterrupted_carry": false,
+      "supported_lower": true,
+      "scorer_version": 3,
+      "attempt": "contact-attempt-09"
+    },
+    {
+      "kind": "SCRIPTED_CONTACT_PROBE_NOT_LEARNED_POLICY",
+      "utc": "2026-09-16T10:05:08.352115+00:00",
+      "mujoco": "3.13.0",
+      "configuration": {
+        "height": 0.037,
+        "offset": 0,
+        "close": -0.1,
+        "roll": 0
+      },
+      "initial_cube": [
+        -4.909085663696263e-08,
+        -0.07999995093807598,
+        0.03789224457978068
+      ],
+      "final_cube": [
+        -0.047832270674632645,
+        -0.04826123917809718,
+        0.03789224457978383
+      ],
+      "target_xy": [
+        -0.075,
+        -0.07
+      ],
+      "min_sustained_lift_m": 3.1363800445660672e-15,
+      "contact_throughout_hold": false,
+      "final_xy_error_m": 0.03479452886257152,
+      "released": true,
+      "stable": true,
+      "scripted_pick_place_passed": false,
+      "full_task_success": null,
+      "learned_policy": null,
+      "waypoint_errors": [
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 0.0002683577320932636,
+          "approach_error_rad": 0.02627508653502176
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.037
+          ],
+          "position_error_m": 2.7352026571704576e-05,
+          "approach_error_rad": 0.026226298919254522
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 2.485788710479504e-05,
+          "approach_error_rad": 0.0262306168919346
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.13
+          ],
+          "position_error_m": 0.0004606966374348106,
+          "approach_error_rad": 0.042023725709376965
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.037
+          ],
+          "position_error_m": 0.0002497398725699992,
+          "approach_error_rad": 0.04247586023749422
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.13
+          ],
+          "position_error_m": 0.00026075366771653225,
+          "approach_error_rad": 0.04249490257073944
+        }
+      ],
+      "simulated_seconds": 19.000000000000348,
+      "wall_seconds": 1.491524200002459,
+      "uninterrupted_carry": false,
+      "supported_lower": true,
+      "scorer_version": 3,
+      "attempt": "contact-attempt-10"
+    },
+    {
+      "kind": "SCRIPTED_CONTACT_PROBE_NOT_LEARNED_POLICY",
+      "utc": "2026-09-16T10:05:09.444111+00:00",
+      "mujoco": "3.13.0",
+      "configuration": {
+        "height": 0.047,
+        "offset": 0.02,
+        "close": -0.1,
+        "roll": 0
+      },
+      "initial_cube": [
+        -4.909085663696263e-08,
+        -0.07999995093807598,
+        0.03789224457978068
+      ],
+      "final_cube": [
+        -0.06209190192548982,
+        -0.03921193453396918,
+        0.037892244579783844
+      ],
+      "target_xy": [
+        -0.075,
+        -0.07
+      ],
+      "min_sustained_lift_m": 3.12944115066216e-15,
+      "contact_throughout_hold": false,
+      "final_xy_error_m": 0.033384486981856906,
+      "released": true,
+      "stable": true,
+      "scripted_pick_place_passed": false,
+      "full_task_success": null,
+      "learned_policy": null,
+      "waypoint_errors": [
+        {
+          "target": [
+            0.012917452398695656,
+            -0.08356339804269453,
+            0.1151528
+          ],
+          "position_error_m": 4.873921262322386e-05,
+          "approach_error_rad": 0.024967669890942266
+        },
+        {
+          "target": [
+            0.012917452398695656,
+            -0.08356339804269453,
+            0.032152799999999995
+          ],
+          "position_error_m": 4.678131319471048e-05,
+          "approach_error_rad": 0.024957744604996945
+        },
+        {
+          "target": [
+            0.012917452398695656,
+            -0.08356339804269453,
+            0.1151528
+          ],
+          "position_error_m": 3.9264743603039436e-05,
+          "approach_error_rad": 0.0249629001307225
+        },
+        {
+          "target": [
+            -0.06225832281807795,
+            -0.07414845303597463,
+            0.1151528
+          ],
+          "position_error_m": 2.2866087876541488e-06,
+          "approach_error_rad": 0.03967640474178035
+        },
+        {
+          "target": [
+            -0.06225832281807795,
+            -0.07414845303597463,
+            0.032152799999999995
+          ],
+          "position_error_m": 4.8797664191270995e-06,
+          "approach_error_rad": 0.03967595196476562
+        },
+        {
+          "target": [
+            -0.06225832281807795,
+            -0.07414845303597463,
+            0.1151528
+          ],
+          "position_error_m": 7.66136562336314e-06,
+          "approach_error_rad": 0.03967908769894884
+        }
+      ],
+      "simulated_seconds": 19.000000000000348,
+      "wall_seconds": 1.0619327999993402,
+      "uninterrupted_carry": false,
+      "supported_lower": true,
+      "scorer_version": 3,
+      "attempt": "contact-attempt-11"
+    },
+    {
+      "kind": "SCRIPTED_CONTACT_PROBE_NOT_LEARNED_POLICY",
+      "utc": "2026-09-16T10:05:10.464431+00:00",
+      "mujoco": "3.13.0",
+      "configuration": {
+        "height": 0.047,
+        "offset": -0.02,
+        "close": -0.1,
+        "roll": 0
+      },
+      "initial_cube": [
+        -4.909085663696263e-08,
+        -0.07999995093807598,
+        0.03789224457978068
+      ],
+      "final_cube": [
+        0.0012115931591020874,
+        -0.08062674974643162,
+        0.03789224457978381
+      ],
+      "target_xy": [
+        -0.075,
+        -0.07
+      ],
+      "min_sustained_lift_m": 3.12944115066216e-15,
+      "contact_throughout_hold": false,
+      "final_xy_error_m": 0.07694890994693673,
+      "released": true,
+      "stable": true,
+      "scripted_pick_place_passed": false,
+      "full_task_success": null,
+      "learned_policy": null,
+      "waypoint_errors": [
+        {
+          "target": [
+            -0.012917550580408929,
+            -0.07643650383345743,
+            0.1448472
+          ],
+          "position_error_m": 0.00028689652240762034,
+          "approach_error_rad": 0.027597023879160805
+        },
+        {
+          "target": [
+            -0.012917550580408929,
+            -0.07643650383345743,
+            0.061847200000000005
+          ],
+          "position_error_m": 0.00042453608882049836,
+          "approach_error_rad": 0.027628021225146463
+        },
+        {
+          "target": [
+            -0.012917550580408929,
+            -0.07643650383345743,
+            0.1448472
+          ],
+          "position_error_m": 0.0002980492958431114,
+          "approach_error_rad": 0.02764682930994182
+        },
+        {
+          "target": [
+            -0.08774167718192205,
+            -0.06585154696402538,
+            0.1448472
+          ],
+          "position_error_m": 0.00017183404060563056,
+          "approach_error_rad": 0.04546757642017412
+        },
+        {
+          "target": [
+            -0.08774167718192205,
+            -0.06585154696402538,
+            0.061847200000000005
+          ],
+          "position_error_m": 5.759508084024514e-06,
+          "approach_error_rad": 0.04570848773439687
+        },
+        {
+          "target": [
+            -0.08774167718192205,
+            -0.06585154696402538,
+            0.1448472
+          ],
+          "position_error_m": 4.0784284730419426e-06,
+          "approach_error_rad": 0.04570870041282403
+        }
+      ],
+      "simulated_seconds": 19.000000000000348,
+      "wall_seconds": 0.9969711000012467,
+      "uninterrupted_carry": false,
+      "supported_lower": true,
+      "scorer_version": 3,
+      "attempt": "contact-attempt-12"
+    },
+    {
+      "kind": "SCRIPTED_CONTACT_PROBE_NOT_LEARNED_POLICY",
+      "utc": "2026-09-16T10:10:19.467954+00:00",
+      "mujoco": "3.13.0",
+      "configuration": {
+        "height": 0.04,
+        "offset": 0.0,
+        "close": -0.1,
+        "roll": 1.57,
+        "grasp_offset": [
+          0,
+          0,
+          0.023
+        ]
+      },
+      "initial_cube": [
+        -4.909085663696263e-08,
+        -0.07999995093807598,
+        0.03789224457978068
+      ],
+      "final_cube": [
+        0.02356621561544711,
+        -0.10475209236530983,
+        0.037892244579783796
+      ],
+      "target_xy": [
+        -0.075,
+        -0.07
+      ],
+      "min_sustained_lift_m": 3.1155633628543455e-15,
+      "contact_throughout_hold": false,
+      "final_xy_error_m": 0.10451318952418319,
+      "released": true,
+      "stable": true,
+      "scripted_pick_place_passed": false,
+      "full_task_success": null,
+      "learned_policy": null,
+      "waypoint_errors": [
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 2.8942519155642333e-06,
+          "approach_error_rad": 0.0641212867760544
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.04
+          ],
+          "position_error_m": 1.7306312787194166e-05,
+          "approach_error_rad": 0.06411608880756121
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 1.4183671833054637e-05,
+          "approach_error_rad": 0.06412324158438178
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.13
+          ],
+          "position_error_m": 1.498784729989514e-06,
+          "approach_error_rad": 0.09517164296582083
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.04
+          ],
+          "position_error_m": 0.00023623583849613012,
+          "approach_error_rad": 0.095169215798004
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.13
+          ],
+          "position_error_m": 0.00023293600216702513,
+          "approach_error_rad": 0.09520141455597164
+        }
+      ],
+      "simulated_seconds": 19.000000000000348,
+      "wall_seconds": 1.5388005999993766,
+      "uninterrupted_carry": false,
+      "supported_lower": true,
+      "scorer_version": 3,
+      "attempt": "contact-attempt-13"
+    },
+    {
+      "kind": "SCRIPTED_CONTACT_PROBE_NOT_LEARNED_POLICY",
+      "utc": "2026-09-16T10:10:21.156841+00:00",
+      "mujoco": "3.13.0",
+      "configuration": {
+        "height": 0.04,
+        "offset": 0.0,
+        "close": -0.1,
+        "roll": 1.57,
+        "grasp_offset": [
+          0.01,
+          0,
+          0.023
+        ]
+      },
+      "initial_cube": [
+        -4.909085663696263e-08,
+        -0.07999995093807598,
+        0.03789224457978068
+      ],
+      "final_cube": [
+        0.021210048743807684,
+        -0.10216079783609022,
+        0.03789224457978383
+      ],
+      "target_xy": [
+        -0.075,
+        -0.07
+      ],
+      "min_sustained_lift_m": 3.1363800445660672e-15,
+      "contact_throughout_hold": false,
+      "final_xy_error_m": 0.10144304015919335,
+      "released": true,
+      "stable": true,
+      "scripted_pick_place_passed": false,
+      "full_task_success": null,
+      "learned_policy": null,
+      "waypoint_errors": [
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 7.575335645371812e-06,
+          "approach_error_rad": 0.06412470483868596
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.04
+          ],
+          "position_error_m": 4.63586322733157e-05,
+          "approach_error_rad": 0.06411407336026105
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 3.9331368043909e-05,
+          "approach_error_rad": 0.06412719607105423
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.13
+          ],
+          "position_error_m": 0.00045479799716741635,
+          "approach_error_rad": 0.09458212724048955
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.04
+          ],
+          "position_error_m": 1.3115773452247494e-05,
+          "approach_error_rad": 0.09517503052651294
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.13
+          ],
+          "position_error_m": 1.9711443616158322e-05,
+          "approach_error_rad": 0.09518168930503654
+        }
+      ],
+      "simulated_seconds": 19.000000000000348,
+      "wall_seconds": 1.6656571999992593,
+      "uninterrupted_carry": false,
+      "supported_lower": true,
+      "scorer_version": 3,
+      "attempt": "contact-attempt-14"
+    },
+    {
+      "kind": "SCRIPTED_CONTACT_PROBE_NOT_LEARNED_POLICY",
+      "utc": "2026-09-16T10:10:22.603724+00:00",
+      "mujoco": "3.13.0",
+      "configuration": {
+        "height": 0.05,
+        "offset": 0.0,
+        "close": -0.1,
+        "roll": 1.57,
+        "grasp_offset": [
+          0,
+          0,
+          0.023
+        ]
+      },
+      "initial_cube": [
+        -4.909085663696263e-08,
+        -0.07999995093807598,
+        0.03789224457978068
+      ],
+      "final_cube": [
+        -0.021986732954909605,
+        -0.10727329686007561,
+        0.037892244579783824
+      ],
+      "target_xy": [
+        -0.075,
+        -0.07
+      ],
+      "min_sustained_lift_m": 3.12944115066216e-15,
+      "contact_throughout_hold": false,
+      "final_xy_error_m": 0.06480513206230962,
+      "released": true,
+      "stable": true,
+      "scripted_pick_place_passed": false,
+      "full_task_success": null,
+      "learned_policy": null,
+      "waypoint_errors": [
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 2.8942519155642333e-06,
+          "approach_error_rad": 0.0641212867760544
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.05
+          ],
+          "position_error_m": 0.0001259787299163241,
+          "approach_error_rad": 0.06411150485108465
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 0.00011087498647582205,
+          "approach_error_rad": 0.06413160244854443
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.13
+          ],
+          "position_error_m": 1.4388471771278592e-06,
+          "approach_error_rad": 0.09517164837196497
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.05
+          ],
+          "position_error_m": 9.856314867061916e-05,
+          "approach_error_rad": 0.09517256103755108
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.13
+          ],
+          "position_error_m": 7.468897237252904e-05,
+          "approach_error_rad": 0.09518976530954108
+        }
+      ],
+      "simulated_seconds": 19.000000000000348,
+      "wall_seconds": 1.4057509999984177,
+      "uninterrupted_carry": false,
+      "supported_lower": true,
+      "scorer_version": 3,
+      "attempt": "contact-attempt-15"
+    },
+    {
+      "kind": "SCRIPTED_CONTACT_PROBE_NOT_LEARNED_POLICY",
+      "utc": "2026-09-16T10:10:23.786693+00:00",
+      "mujoco": "3.13.0",
+      "configuration": {
+        "height": 0.05,
+        "offset": 0.0,
+        "close": -0.1,
+        "roll": 1.57,
+        "grasp_offset": [
+          0.01,
+          0,
+          0.023
+        ]
+      },
+      "initial_cube": [
+        -4.909085663696263e-08,
+        -0.07999995093807598,
+        0.03789224457978068
+      ],
+      "final_cube": [
+        -0.006146397989134426,
+        -0.11190710391122682,
+        0.03789224457978383
+      ],
+      "target_xy": [
+        -0.075,
+        -0.07
+      ],
+      "min_sustained_lift_m": 3.1502578323738817e-15,
+      "contact_throughout_hold": false,
+      "final_xy_error_m": 0.08060411818323573,
+      "released": true,
+      "stable": true,
+      "scripted_pick_place_passed": false,
+      "full_task_success": null,
+      "learned_policy": null,
+      "waypoint_errors": [
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 7.575335645371812e-06,
+          "approach_error_rad": 0.06412470483868596
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.05
+          ],
+          "position_error_m": 0.00019188967497540084,
+          "approach_error_rad": 0.06410964334101303
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 0.00015712010664883274,
+          "approach_error_rad": 0.06413540419369917
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.13
+          ],
+          "position_error_m": 0.0004421190766371972,
+          "approach_error_rad": 0.09459616182043158
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.05
+          ],
+          "position_error_m": 4.485597896196279e-06,
+          "approach_error_rad": 0.09517499883410908
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.13
+          ],
+          "position_error_m": 3.9252236988209235e-06,
+          "approach_error_rad": 0.09517521755309068
+        }
+      ],
+      "simulated_seconds": 19.000000000000348,
+      "wall_seconds": 1.153008500001306,
+      "uninterrupted_carry": false,
+      "supported_lower": true,
+      "scorer_version": 3,
+      "attempt": "contact-attempt-16"
+    },
+    {
+      "kind": "SCRIPTED_CONTACT_PROBE_NOT_LEARNED_POLICY",
+      "utc": "2026-09-16T10:10:25.699709+00:00",
+      "mujoco": "3.13.0",
+      "configuration": {
+        "height": 0.03,
+        "offset": 0.0,
+        "close": -0.1,
+        "roll": 1.57,
+        "grasp_offset": [
+          0.01,
+          0,
+          0.023
+        ]
+      },
+      "initial_cube": [
+        -4.909085663696263e-08,
+        -0.07999995093807598,
+        0.03789224457978068
+      ],
+      "final_cube": [
+        0.01916365530026444,
+        -0.10150568604040348,
+        0.03789224457978385
+      ],
+      "target_xy": [
+        -0.075,
+        -0.07
+      ],
+      "min_sustained_lift_m": 3.1502578323738817e-15,
+      "contact_throughout_hold": false,
+      "final_xy_error_m": 0.09929452267060601,
+      "released": true,
+      "stable": true,
+      "scripted_pick_place_passed": false,
+      "full_task_success": null,
+      "learned_policy": null,
+      "waypoint_errors": [
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 7.575335645371812e-06,
+          "approach_error_rad": 0.06412470483868596
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.03
+          ],
+          "position_error_m": 2.403424591009627e-06,
+          "approach_error_rad": 0.06411788924927572
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 4.209055483889476e-06,
+          "approach_error_rad": 0.06411995937106317
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.13
+          ],
+          "position_error_m": 0.0004601330112669625,
+          "approach_error_rad": 0.09457637467688362
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.03
+          ],
+          "position_error_m": 0.00013419792819571467,
+          "approach_error_rad": 0.0951748119304572
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.13
+          ],
+          "position_error_m": 0.00014210949044420333,
+          "approach_error_rad": 0.09519901971907246
+        }
+      ],
+      "simulated_seconds": 19.000000000000348,
+      "wall_seconds": 1.8881388000008883,
+      "uninterrupted_carry": false,
+      "supported_lower": true,
+      "scorer_version": 3,
+      "attempt": "contact-attempt-17"
+    },
+    {
+      "kind": "SCRIPTED_CONTACT_PROBE_NOT_LEARNED_POLICY",
+      "utc": "2026-09-16T10:10:27.167966+00:00",
+      "mujoco": "3.13.0",
+      "configuration": {
+        "height": 0.04,
+        "offset": 0.0,
+        "close": -0.1,
+        "roll": 1.57,
+        "grasp_offset": [
+          -0.01,
+          0,
+          0.023
+        ]
+      },
+      "initial_cube": [
+        -4.909085663696263e-08,
+        -0.07999995093807598,
+        0.03789224457978068
+      ],
+      "final_cube": [
+        0.031125754659480545,
+        -0.10648188967571585,
+        0.0378922445797838
+      ],
+      "target_xy": [
+        -0.075,
+        -0.07
+      ],
+      "min_sustained_lift_m": 3.1086244689504383e-15,
+      "contact_throughout_hold": false,
+      "final_xy_error_m": 0.11222122827858977,
+      "released": true,
+      "stable": true,
+      "scripted_pick_place_passed": false,
+      "full_task_success": null,
+      "learned_policy": null,
+      "waypoint_errors": [
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 3.5970646928934983e-06,
+          "approach_error_rad": 0.06411899076678201
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.04
+          ],
+          "position_error_m": 1.9024268681102907e-06,
+          "approach_error_rad": 0.064118303902418
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 4.122748727424401e-06,
+          "approach_error_rad": 0.06411911647643391
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.13
+          ],
+          "position_error_m": 2.9846586485318515e-06,
+          "approach_error_rad": 0.09517006724251803
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.04
+          ],
+          "position_error_m": 2.5666906390676457e-05,
+          "approach_error_rad": 0.09516691118196353
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.13
+          ],
+          "position_error_m": 3.2014149254347185e-05,
+          "approach_error_rad": 0.09518326695946289
+        }
+      ],
+      "simulated_seconds": 19.000000000000348,
+      "wall_seconds": 1.4469797999990988,
+      "uninterrupted_carry": false,
+      "supported_lower": true,
+      "scorer_version": 3,
+      "attempt": "contact-attempt-18"
+    },
+    {
+      "kind": "SCRIPTED_CONTACT_PROBE_NOT_LEARNED_POLICY",
+      "utc": "2026-09-16T10:24:03.604913+00:00",
+      "mujoco": "3.13.0",
+      "configuration": {
+        "height": 0.04,
+        "offset": 0.0,
+        "close": -0.1,
+        "roll": 1.57,
+        "grasp_offset": [
+          0,
+          0,
+          0.023
+        ],
+        "collision_mode": "decomposed"
+      },
+      "initial_cube": [
+        -4.909085663696263e-08,
+        -0.07999995093807598,
+        0.03789224457978068
+      ],
+      "final_cube": [
+        0.017109810756150673,
+        -0.11314261461883568,
+        0.03789224457978383
+      ],
+      "target_xy": [
+        -0.075,
+        -0.07
+      ],
+      "min_sustained_lift_m": 3.1086244689504383e-15,
+      "contact_throughout_hold": false,
+      "hold_contact_requirement": "Both fixed finger and moving jaw in every hold sample",
+      "failure": null,
+      "final_xy_error_m": 0.10171284301248915,
+      "released": true,
+      "stable": true,
+      "scripted_pick_place_passed": false,
+      "full_task_success": null,
+      "learned_policy": null,
+      "waypoint_errors": [
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 2.8942519155642333e-06,
+          "approach_error_rad": 0.0641212867760544
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.04
+          ],
+          "position_error_m": 1.7306312787194166e-05,
+          "approach_error_rad": 0.06411608880756121
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 1.4183671833090194e-05,
+          "approach_error_rad": 0.06412324158437831
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.13
+          ],
+          "position_error_m": 1.498784730085253e-06,
+          "approach_error_rad": 0.09517164296582434
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.04
+          ],
+          "position_error_m": 0.00023623583849603503,
+          "approach_error_rad": 0.0951692157980005
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.13
+          ],
+          "position_error_m": 0.00023293600216702263,
+          "approach_error_rad": 0.09520141455597865
+        }
+      ],
+      "simulated_seconds": 19.000000000000348,
+      "wall_seconds": 1.1072624000007636,
+      "uninterrupted_carry": false,
+      "supported_lower": true,
+      "scorer_version": 3,
+      "attempt": "contact-attempt-19"
+    },
+    {
+      "kind": "SCRIPTED_CONTACT_PROBE_NOT_LEARNED_POLICY",
+      "utc": "2026-09-16T10:24:04.490265+00:00",
+      "mujoco": "3.13.0",
+      "configuration": {
+        "height": 0.04,
+        "offset": 0.0,
+        "close": -0.1,
+        "roll": 1.57,
+        "grasp_offset": [
+          0.01,
+          0,
+          0.023
+        ],
+        "collision_mode": "decomposed"
+      },
+      "initial_cube": [
+        -4.909085663696263e-08,
+        -0.07999995093807598,
+        0.03789224457978068
+      ],
+      "final_cube": [
+        0.029176315409189763,
+        -0.10545936993447691,
+        0.0378922445797838
+      ],
+      "target_xy": [
+        -0.075,
+        -0.07
+      ],
+      "min_sustained_lift_m": 3.1225022567582528e-15,
+      "contact_throughout_hold": false,
+      "hold_contact_requirement": "Both fixed finger and moving jaw in every hold sample",
+      "failure": null,
+      "final_xy_error_m": 0.11004577051565895,
+      "released": true,
+      "stable": true,
+      "scripted_pick_place_passed": false,
+      "full_task_success": null,
+      "learned_policy": null,
+      "waypoint_errors": [
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 7.575335645371812e-06,
+          "approach_error_rad": 0.06412470483868596
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.04
+          ],
+          "position_error_m": 4.63586322733157e-05,
+          "approach_error_rad": 0.06411407336026105
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 3.933136804402205e-05,
+          "approach_error_rad": 0.06412719607106289
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.13
+          ],
+          "position_error_m": 0.0004547979971672815,
+          "approach_error_rad": 0.09458212724050365
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.04
+          ],
+          "position_error_m": 1.3115773452140729e-05,
+          "approach_error_rad": 0.09517503052651995
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.13
+          ],
+          "position_error_m": 1.971144361601208e-05,
+          "approach_error_rad": 0.09518168930503537
+        }
+      ],
+      "simulated_seconds": 19.000000000000348,
+      "wall_seconds": 0.8667206999998598,
+      "uninterrupted_carry": false,
+      "supported_lower": true,
+      "scorer_version": 3,
+      "attempt": "contact-attempt-20"
+    },
+    {
+      "kind": "SCRIPTED_CONTACT_PROBE_NOT_LEARNED_POLICY",
+      "utc": "2026-09-16T10:24:05.318987+00:00",
+      "mujoco": "3.13.0",
+      "configuration": {
+        "height": 0.05,
+        "offset": 0.0,
+        "close": -0.1,
+        "roll": 1.57,
+        "grasp_offset": [
+          0,
+          0,
+          0.023
+        ],
+        "collision_mode": "decomposed"
+      },
+      "initial_cube": [
+        -4.909085663696263e-08,
+        -0.07999995093807598,
+        0.03789224457978068
+      ],
+      "final_cube": [
+        0.0020894082484224077,
+        -0.09531266531799813,
+        0.03789224457978382
+      ],
+      "target_xy": [
+        -0.075,
+        -0.07
+      ],
+      "min_sustained_lift_m": 3.1155633628543455e-15,
+      "contact_throughout_hold": false,
+      "hold_contact_requirement": "Both fixed finger and moving jaw in every hold sample",
+      "failure": null,
+      "final_xy_error_m": 0.08113881863567476,
+      "released": true,
+      "stable": true,
+      "scripted_pick_place_passed": false,
+      "full_task_success": null,
+      "learned_policy": null,
+      "waypoint_errors": [
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 2.8942519155642333e-06,
+          "approach_error_rad": 0.0641212867760544
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.05
+          ],
+          "position_error_m": 0.0001259787299163241,
+          "approach_error_rad": 0.06411150485108465
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 0.00011087498647577423,
+          "approach_error_rad": 0.06413160244853577
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.13
+          ],
+          "position_error_m": 1.4388471770268944e-06,
+          "approach_error_rad": 0.0951716483719638
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.05
+          ],
+          "position_error_m": 9.856314867052747e-05,
+          "approach_error_rad": 0.09517256103755342
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.13
+          ],
+          "position_error_m": 7.468897237256265e-05,
+          "approach_error_rad": 0.09518976530953524
+        }
+      ],
+      "simulated_seconds": 19.000000000000348,
+      "wall_seconds": 0.8093593999983568,
+      "uninterrupted_carry": false,
+      "supported_lower": true,
+      "scorer_version": 3,
+      "attempt": "contact-attempt-21"
+    },
+    {
+      "kind": "SCRIPTED_CONTACT_PROBE_NOT_LEARNED_POLICY",
+      "utc": "2026-09-16T10:24:06.125457+00:00",
+      "mujoco": "3.13.0",
+      "configuration": {
+        "height": 0.05,
+        "offset": 0.0,
+        "close": -0.1,
+        "roll": 1.57,
+        "grasp_offset": [
+          0.01,
+          0,
+          0.023
+        ],
+        "collision_mode": "decomposed"
+      },
+      "initial_cube": [
+        -4.909085663696263e-08,
+        -0.07999995093807598,
+        0.03789224457978068
+      ],
+      "final_cube": [
+        0.0020883157955059618,
+        -0.08562221779155099,
+        0.03789224457978381
+      ],
+      "target_xy": [
+        -0.075,
+        -0.07
+      ],
+      "min_sustained_lift_m": 3.0878077872387166e-15,
+      "contact_throughout_hold": false,
+      "hold_contact_requirement": "Both fixed finger and moving jaw in every hold sample",
+      "failure": null,
+      "final_xy_error_m": 0.07865533752336396,
+      "released": true,
+      "stable": true,
+      "scripted_pick_place_passed": false,
+      "full_task_success": null,
+      "learned_policy": null,
+      "waypoint_errors": [
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 7.575335645371812e-06,
+          "approach_error_rad": 0.06412470483868596
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.05
+          ],
+          "position_error_m": 0.00019188967497540084,
+          "approach_error_rad": 0.06410964334101303
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 0.00015712010664891237,
+          "approach_error_rad": 0.06413540419369397
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.13
+          ],
+          "position_error_m": 0.00044211907663719614,
+          "approach_error_rad": 0.09459616182043276
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.05
+          ],
+          "position_error_m": 4.485597896207622e-06,
+          "approach_error_rad": 0.09517499883410559
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.13
+          ],
+          "position_error_m": 3.925223698658592e-06,
+          "approach_error_rad": 0.09517521755310003
+        }
+      ],
+      "simulated_seconds": 19.000000000000348,
+      "wall_seconds": 0.7895811000016693,
+      "uninterrupted_carry": false,
+      "supported_lower": true,
+      "scorer_version": 3,
+      "attempt": "contact-attempt-22"
+    },
+    {
+      "kind": "SCRIPTED_CONTACT_PROBE_NOT_LEARNED_POLICY",
+      "utc": "2026-09-16T10:24:06.909671+00:00",
+      "mujoco": "3.13.0",
+      "configuration": {
+        "height": 0.03,
+        "offset": 0.0,
+        "close": -0.1,
+        "roll": 1.57,
+        "grasp_offset": [
+          0.01,
+          0,
+          0.023
+        ],
+        "collision_mode": "decomposed"
+      },
+      "initial_cube": [
+        -4.909085663696263e-08,
+        -0.07999995093807598,
+        0.03789224457978068
+      ],
+      "final_cube": [
+        0.04662910767237959,
+        -0.10683063911711907,
+        0.037892244579783824
+      ],
+      "target_xy": [
+        -0.075,
+        -0.07
+      ],
+      "min_sustained_lift_m": 3.1433189384699745e-15,
+      "contact_throughout_hold": false,
+      "hold_contact_requirement": "Both fixed finger and moving jaw in every hold sample",
+      "failure": null,
+      "final_xy_error_m": 0.1270831846113197,
+      "released": true,
+      "stable": true,
+      "scripted_pick_place_passed": false,
+      "full_task_success": null,
+      "learned_policy": null,
+      "waypoint_errors": [
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 7.575335645371812e-06,
+          "approach_error_rad": 0.06412470483868596
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.03
+          ],
+          "position_error_m": 2.403424591009627e-06,
+          "approach_error_rad": 0.06411788924927572
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 4.209055483970644e-06,
+          "approach_error_rad": 0.06411995937106836
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.13
+          ],
+          "position_error_m": 0.0004601330112668071,
+          "approach_error_rad": 0.09457637467689069
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.03
+          ],
+          "position_error_m": 0.00013419792819567266,
+          "approach_error_rad": 0.09517481193045603
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.13
+          ],
+          "position_error_m": 0.0001421094904441321,
+          "approach_error_rad": 0.09519901971907481
+        }
+      ],
+      "simulated_seconds": 19.000000000000348,
+      "wall_seconds": 0.7672838999969827,
+      "uninterrupted_carry": false,
+      "supported_lower": true,
+      "scorer_version": 3,
+      "attempt": "contact-attempt-23"
+    },
+    {
+      "kind": "SCRIPTED_CONTACT_PROBE_NOT_LEARNED_POLICY",
+      "utc": "2026-09-16T10:24:07.757905+00:00",
+      "mujoco": "3.13.0",
+      "configuration": {
+        "height": 0.04,
+        "offset": 0.0,
+        "close": -0.1,
+        "roll": 1.57,
+        "grasp_offset": [
+          -0.01,
+          0,
+          0.023
+        ],
+        "collision_mode": "decomposed"
+      },
+      "initial_cube": [
+        -4.909085663696263e-08,
+        -0.07999995093807598,
+        0.03789224457978068
+      ],
+      "final_cube": [
+        0.03502291512827389,
+        -0.12289845711298292,
+        0.03789224457978384
+      ],
+      "target_xy": [
+        -0.075,
+        -0.07
+      ],
+      "min_sustained_lift_m": -2.1128175597961985e-11,
+      "contact_throughout_hold": false,
+      "hold_contact_requirement": "Both fixed finger and moving jaw in every hold sample",
+      "failure": null,
+      "final_xy_error_m": 0.12207902611938487,
+      "released": true,
+      "stable": true,
+      "scripted_pick_place_passed": false,
+      "full_task_success": null,
+      "learned_policy": null,
+      "waypoint_errors": [
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 3.5970646928934983e-06,
+          "approach_error_rad": 0.06411899076678201
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.04
+          ],
+          "position_error_m": 1.9024268681102907e-06,
+          "approach_error_rad": 0.064118303902418
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 4.122748727414113e-06,
+          "approach_error_rad": 0.06411911647644084
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.13
+          ],
+          "position_error_m": 2.984658648542939e-06,
+          "approach_error_rad": 0.09517006724251686
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.04
+          ],
+          "position_error_m": 2.566690639036131e-05,
+          "approach_error_rad": 0.09516691118196587
+        },
+        {
+          "target": [
+            -0.075,
+            -0.07,
+            0.13
+          ],
+          "position_error_m": 3.201414925425536e-05,
+          "approach_error_rad": 0.09518326695945821
+        }
+      ],
+      "simulated_seconds": 19.000000000000348,
+      "wall_seconds": 0.8306670999991184,
+      "uninterrupted_carry": false,
+      "supported_lower": true,
+      "scorer_version": 3,
+      "attempt": "contact-attempt-24"
+    },
+    {
+      "kind": "SCRIPTED_CONTACT_PROBE_NOT_LEARNED_POLICY",
+      "utc": "2026-09-16T10:25:24.382756+00:00",
+      "mujoco": "3.13.0",
+      "configuration": {
+        "height": 0.045,
+        "offset": 0.0,
+        "close": -0.1,
+        "roll": 1.57,
+        "grasp_offset": [
+          -0.025,
+          0,
+          0.023
+        ],
+        "collision_mode": "decomposed",
+        "tilt": 0.2
+      },
+      "initial_cube": [
+        -4.909085663696263e-08,
+        -0.07999995093807598,
+        0.03789224457978068
+      ],
+      "final_cube": [
+        0.004450527073528141,
+        -0.13941717045234603,
+        0.0378922445797838
+      ],
+      "target_xy": [
+        0.025,
+        -0.14
+      ],
+      "min_sustained_lift_m": 0.0783255856249199,
+      "contact_throughout_hold": true,
+      "hold_contact_requirement": "Both fixed finger and moving jaw in every hold sample",
+      "failure": null,
+      "final_xy_error_m": 0.02055773644731877,
+      "released": true,
+      "stable": true,
+      "scripted_pick_place_passed": false,
+      "full_task_success": null,
+      "learned_policy": null,
+      "waypoint_errors": [
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 0.0001284995412381144,
+          "approach_error_rad": 0.09379697298162654
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.045
+          ],
+          "position_error_m": 1.0788094788267268e-06,
+          "approach_error_rad": 0.09378248721451957
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 0.00044341024098214297,
+          "approach_error_rad": 0.09378548803045078
+        },
+        {
+          "target": [
+            0.025,
+            -0.14,
+            0.13
+          ],
+          "position_error_m": 0.0003931121026701835,
+          "approach_error_rad": 0.09787337857300854
+        },
+        {
+          "target": [
+            0.025,
+            -0.14,
+            0.045
+          ],
+          "position_error_m": 0.000313812544411097,
+          "approach_error_rad": 0.09707724065103088
+        },
+        {
+          "target": [
+            0.025,
+            -0.14,
+            0.13
+          ],
+          "position_error_m": 0.0003644168284629613,
+          "approach_error_rad": 0.09708056219361273
+        }
+      ],
+      "simulated_seconds": 19.000000000000348,
+      "wall_seconds": 1.5471957000008842,
+      "uninterrupted_carry": false,
+      "supported_lower": true,
+      "scorer_version": 3,
+      "attempt": "contact-attempt-25"
+    },
+    {
+      "kind": "SCRIPTED_CONTACT_PROBE_NOT_LEARNED_POLICY",
+      "utc": "2026-09-16T10:25:25.715900+00:00",
+      "mujoco": "3.13.0",
+      "configuration": {
+        "height": 0.045,
+        "offset": 0.0,
+        "close": -0.1,
+        "roll": 1.57,
+        "grasp_offset": [
+          -0.025,
+          0,
+          0.023
+        ],
+        "collision_mode": "decomposed",
+        "tilt": 0.4
+      },
+      "initial_cube": [
+        -4.909085663696263e-08,
+        -0.07999995093807598,
+        0.03789224457978068
+      ],
+      "final_cube": [
+        0.014168216545640122,
+        -0.21207895296914386,
+        0.037892244579783796
+      ],
+      "target_xy": [
+        0.025,
+        -0.14
+      ],
+      "min_sustained_lift_m": 0.08093274246930535,
+      "contact_throughout_hold": true,
+      "hold_contact_requirement": "Both fixed finger and moving jaw in every hold sample",
+      "failure": null,
+      "final_xy_error_m": 0.07288829119913702,
+      "released": true,
+      "stable": true,
+      "scripted_pick_place_passed": false,
+      "full_task_success": null,
+      "learned_policy": null,
+      "waypoint_errors": [
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 1.556475394249603e-06,
+          "approach_error_rad": 0.08772128920288329
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.045
+          ],
+          "position_error_m": 2.4265852049938355e-05,
+          "approach_error_rad": 0.08772054743744293
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 3.437199425688196e-05,
+          "approach_error_rad": 0.08772303248507157
+        },
+        {
+          "target": [
+            0.025,
+            -0.14,
+            0.13
+          ],
+          "position_error_m": 1.2618126216383618e-06,
+          "approach_error_rad": 0.09080344954951271
+        },
+        {
+          "target": [
+            0.025,
+            -0.14,
+            0.045
+          ],
+          "position_error_m": 5.136328910889812e-05,
+          "approach_error_rad": 0.09080332845463202
+        },
+        {
+          "target": [
+            0.025,
+            -0.14,
+            0.13
+          ],
+          "position_error_m": 6.270555910304194e-05,
+          "approach_error_rad": 0.09080617992210341
+        }
+      ],
+      "simulated_seconds": 19.000000000000348,
+      "wall_seconds": 1.312370400002692,
+      "uninterrupted_carry": false,
+      "supported_lower": true,
+      "scorer_version": 3,
+      "attempt": "contact-attempt-26"
+    },
+    {
+      "kind": "SCRIPTED_CONTACT_PROBE_NOT_LEARNED_POLICY",
+      "utc": "2026-09-16T10:25:27.128631+00:00",
+      "mujoco": "3.13.0",
+      "configuration": {
+        "height": 0.045,
+        "offset": 0.0,
+        "close": -0.1,
+        "roll": 1.57,
+        "grasp_offset": [
+          -0.025,
+          0,
+          0.023
+        ],
+        "collision_mode": "decomposed",
+        "tilt": 0.5
+      },
+      "initial_cube": [
+        -4.909085663696263e-08,
+        -0.07999995093807598,
+        0.03789224457978068
+      ],
+      "final_cube": [
+        0.049550404424796426,
+        -0.15570098172999064,
+        0.037892244579783824
+      ],
+      "target_xy": [
+        0.025,
+        -0.14
+      ],
+      "min_sustained_lift_m": 0.07257352126255004,
+      "contact_throughout_hold": true,
+      "hold_contact_requirement": "Both fixed finger and moving jaw in every hold sample",
+      "failure": null,
+      "final_xy_error_m": 0.0291417773086434,
+      "released": true,
+      "stable": true,
+      "scripted_pick_place_passed": false,
+      "full_task_success": null,
+      "learned_policy": null,
+      "waypoint_errors": [
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 2.1003318692216008e-05,
+          "approach_error_rad": 0.08289206736336935
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.045
+          ],
+          "position_error_m": 0.0002927454456548526,
+          "approach_error_rad": 0.082881303018524
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 0.0004304649829543108,
+          "approach_error_rad": 0.08289357326466884
+        },
+        {
+          "target": [
+            0.025,
+            -0.14,
+            0.13
+          ],
+          "position_error_m": 1.8394937055560734e-06,
+          "approach_error_rad": 0.08579811907631563
+        },
+        {
+          "target": [
+            0.025,
+            -0.14,
+            0.045
+          ],
+          "position_error_m": 3.056987761252634e-06,
+          "approach_error_rad": 0.08579894909220104
+        },
+        {
+          "target": [
+            0.025,
+            -0.14,
+            0.13
+          ],
+          "position_error_m": 5.244854692924952e-06,
+          "approach_error_rad": 0.0857990526085034
+        }
+      ],
+      "simulated_seconds": 19.000000000000348,
+      "wall_seconds": 1.3864189000014449,
+      "uninterrupted_carry": false,
+      "supported_lower": true,
+      "scorer_version": 3,
+      "attempt": "contact-attempt-27"
+    },
+    {
+      "kind": "SCRIPTED_CONTACT_PROBE_NOT_LEARNED_POLICY",
+      "utc": "2026-09-16T10:25:28.218702+00:00",
+      "mujoco": "3.13.0",
+      "configuration": {
+        "height": 0.055,
+        "offset": 0.0,
+        "close": -0.1,
+        "roll": 1.57,
+        "grasp_offset": [
+          -0.025,
+          0,
+          0.023
+        ],
+        "collision_mode": "decomposed",
+        "tilt": 0.2
+      },
+      "initial_cube": [
+        -4.909085663696263e-08,
+        -0.07999995093807598,
+        0.03789224457978068
+      ],
+      "final_cube": [
+        -0.01159385467194731,
+        -0.07467451207054658,
+        0.037892244579783824
+      ],
+      "target_xy": [
+        0.025,
+        -0.14
+      ],
+      "min_sustained_lift_m": 3.1086244689504383e-15,
+      "contact_throughout_hold": false,
+      "hold_contact_requirement": "Both fixed finger and moving jaw in every hold sample",
+      "failure": null,
+      "final_xy_error_m": 0.07487676257005751,
+      "released": true,
+      "stable": true,
+      "scripted_pick_place_passed": false,
+      "full_task_success": null,
+      "learned_policy": null,
+      "waypoint_errors": [
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 0.0001284995412381144,
+          "approach_error_rad": 0.09379697298162654
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.055
+          ],
+          "position_error_m": 1.7961481639681864e-06,
+          "approach_error_rad": 0.09378254597305913
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 1.6379399078862491e-06,
+          "approach_error_rad": 0.09378246252732571
+        },
+        {
+          "target": [
+            0.025,
+            -0.14,
+            0.13
+          ],
+          "position_error_m": 0.0003614776561899351,
+          "approach_error_rad": 0.0978094319704302
+        },
+        {
+          "target": [
+            0.025,
+            -0.14,
+            0.055
+          ],
+          "position_error_m": 2.278826408673339e-06,
+          "approach_error_rad": 0.0970783108155503
+        },
+        {
+          "target": [
+            0.025,
+            -0.14,
+            0.13
+          ],
+          "position_error_m": 2.6111651309559872e-06,
+          "approach_error_rad": 0.09707832870246631
+        }
+      ],
+      "simulated_seconds": 19.000000000000348,
+      "wall_seconds": 1.0640445000026375,
+      "uninterrupted_carry": false,
+      "supported_lower": true,
+      "scorer_version": 3,
+      "attempt": "contact-attempt-28"
+    },
+    {
+      "kind": "SCRIPTED_CONTACT_PROBE_NOT_LEARNED_POLICY",
+      "utc": "2026-09-16T10:25:29.226146+00:00",
+      "mujoco": "3.13.0",
+      "configuration": {
+        "height": 0.055,
+        "offset": 0.0,
+        "close": -0.1,
+        "roll": 1.57,
+        "grasp_offset": [
+          -0.025,
+          0,
+          0.023
+        ],
+        "collision_mode": "decomposed",
+        "tilt": 0.4
+      },
+      "initial_cube": [
+        -4.909085663696263e-08,
+        -0.07999995093807598,
+        0.03789224457978068
+      ],
+      "final_cube": [
+        -0.01537517178289516,
+        -0.07372936303794973,
+        0.037892244579783824
+      ],
+      "target_xy": [
+        0.025,
+        -0.14
+      ],
+      "min_sustained_lift_m": 3.101685575046531e-15,
+      "contact_throughout_hold": false,
+      "hold_contact_requirement": "Both fixed finger and moving jaw in every hold sample",
+      "failure": null,
+      "final_xy_error_m": 0.07760123594282606,
+      "released": true,
+      "stable": true,
+      "scripted_pick_place_passed": false,
+      "full_task_success": null,
+      "learned_policy": null,
+      "waypoint_errors": [
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 1.556475394249603e-06,
+          "approach_error_rad": 0.08772128920288329
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.055
+          ],
+          "position_error_m": 6.494228870017668e-05,
+          "approach_error_rad": 0.08771971670880206
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 9.32282731689452e-05,
+          "approach_error_rad": 0.08772396399022693
+        },
+        {
+          "target": [
+            0.025,
+            -0.14,
+            0.13
+          ],
+          "position_error_m": 1.2812271348849513e-06,
+          "approach_error_rad": 0.09080343980175945
+        },
+        {
+          "target": [
+            0.025,
+            -0.14,
+            0.055
+          ],
+          "position_error_m": 0.00030204398871018484,
+          "approach_error_rad": 0.0908016274128732
+        },
+        {
+          "target": [
+            0.025,
+            -0.14,
+            0.13
+          ],
+          "position_error_m": 0.000365216094280896,
+          "approach_error_rad": 0.09080901656002868
+        }
+      ],
+      "simulated_seconds": 19.000000000000348,
+      "wall_seconds": 0.9838619000001927,
+      "uninterrupted_carry": false,
+      "supported_lower": true,
+      "scorer_version": 3,
+      "attempt": "contact-attempt-29"
+    },
+    {
+      "kind": "SCRIPTED_CONTACT_PROBE_NOT_LEARNED_POLICY",
+      "utc": "2026-09-16T10:25:30.327679+00:00",
+      "mujoco": "3.13.0",
+      "configuration": {
+        "height": 0.055,
+        "offset": 0.0,
+        "close": -0.1,
+        "roll": 1.57,
+        "grasp_offset": [
+          -0.025,
+          0,
+          0.023
+        ],
+        "collision_mode": "decomposed",
+        "tilt": 0.5
+      },
+      "initial_cube": [
+        -4.909085663696263e-08,
+        -0.07999995093807598,
+        0.03789224457978068
+      ],
+      "final_cube": [
+        -0.0247725310436042,
+        -0.08246400842011158,
+        0.03789224457978376
+      ],
+      "target_xy": [
+        0.025,
+        -0.14
+      ],
+      "min_sustained_lift_m": 3.0878077872387166e-15,
+      "contact_throughout_hold": false,
+      "hold_contact_requirement": "Both fixed finger and moving jaw in every hold sample",
+      "failure": null,
+      "final_xy_error_m": 0.0760769030229776,
+      "released": true,
+      "stable": true,
+      "scripted_pick_place_passed": false,
+      "full_task_success": null,
+      "learned_policy": null,
+      "waypoint_errors": [
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 2.1003318692216008e-05,
+          "approach_error_rad": 0.08289206736336935
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.055
+          ],
+          "position_error_m": 0.0004300490828480178,
+          "approach_error_rad": 0.08288012467898694
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 2.3588898601904084e-06,
+          "approach_error_rad": 0.08288625692412235
+        },
+        {
+          "target": [
+            0.025,
+            -0.14,
+            0.13
+          ],
+          "position_error_m": 1.662441928813122e-06,
+          "approach_error_rad": 0.08579818098072488
+        },
+        {
+          "target": [
+            0.025,
+            -0.14,
+            0.055
+          ],
+          "position_error_m": 0.00014099280725453028,
+          "approach_error_rad": 0.08579660660641653
+        },
+        {
+          "target": [
+            0.025,
+            -0.14,
+            0.13
+          ],
+          "position_error_m": 0.0001567614709356556,
+          "approach_error_rad": 0.08580351912533307
+        }
+      ],
+      "simulated_seconds": 19.000000000000348,
+      "wall_seconds": 1.0756308999989415,
+      "uninterrupted_carry": false,
+      "supported_lower": true,
+      "scorer_version": 3,
+      "attempt": "contact-attempt-30"
+    },
+    {
+      "kind": "SCRIPTED_CONTACT_PROBE_NOT_LEARNED_POLICY",
+      "utc": "2026-09-16T10:29:06.800475+00:00",
+      "mujoco": "3.13.0",
+      "configuration": {
+        "height": 0.045,
+        "offset": 0.0,
+        "close": -0.1,
+        "roll": 1.57,
+        "grasp_offset": [
+          -0.035,
+          0,
+          0.023
+        ],
+        "collision_mode": "decomposed",
+        "tilt": 0.2,
+        "seed": null
+      },
+      "randomization": null,
+      "initial_cube": [
+        -4.909085663696263e-08,
+        -0.07999995093807598,
+        0.03789224457978068
+      ],
+      "final_cube": [
+        0.026340107949549395,
+        -0.14904276783403608,
+        0.03789224457978385
+      ],
+      "target_xy": [
+        0.025,
+        -0.14
+      ],
+      "min_sustained_lift_m": 0.0795441658263347,
+      "contact_throughout_hold": true,
+      "hold_contact_requirement": "Both fixed finger and moving jaw in every hold sample",
+      "failure": null,
+      "uninterrupted_carry": true,
+      "scorer_version": 3,
+      "final_xy_error_m": 0.009141528286710209,
+      "released": true,
+      "stable": true,
+      "scripted_pick_place_passed": true,
+      "full_task_success": null,
+      "learned_policy": null,
+      "waypoint_errors": [
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 8.03035814359982e-05,
+          "approach_error_rad": 0.0937941057282019
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.045
+          ],
+          "position_error_m": 3.087494439078276e-05,
+          "approach_error_rad": 0.0937821955780774
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 3.603767662878274e-05,
+          "approach_error_rad": 0.09378314417785731
+        },
+        {
+          "target": [
+            0.025,
+            -0.14,
+            0.13
+          ],
+          "position_error_m": 0.0003858623787006291,
+          "approach_error_rad": 0.09783944540813999
+        },
+        {
+          "target": [
+            0.025,
+            -0.14,
+            0.045
+          ],
+          "position_error_m": 8.726232473430407e-05,
+          "approach_error_rad": 0.0970779936340912
+        },
+        {
+          "target": [
+            0.025,
+            -0.14,
+            0.13
+          ],
+          "position_error_m": 0.00011654290208516049,
+          "approach_error_rad": 0.09707948250859841
+        }
+      ],
+      "simulated_seconds": 19.000000000000348,
+      "wall_seconds": 2.6186763000005158,
+      "supported_lower": true,
+      "attempt": "contact-attempt-31"
+    },
+    {
+      "kind": "SCRIPTED_CONTACT_PROBE_NOT_LEARNED_POLICY",
+      "utc": "2026-09-16T10:29:09.227484+00:00",
+      "mujoco": "3.13.0",
+      "configuration": {
+        "height": 0.045,
+        "offset": 0.0,
+        "close": -0.1,
+        "roll": 1.57,
+        "grasp_offset": [
+          -0.04,
+          0,
+          0.023
+        ],
+        "collision_mode": "decomposed",
+        "tilt": 0.2,
+        "seed": null
+      },
+      "randomization": null,
+      "initial_cube": [
+        -4.909085663696263e-08,
+        -0.07999995093807598,
+        0.03789224457978068
+      ],
+      "final_cube": [
+        0.030602298662780063,
+        -0.15130835371269544,
+        0.037892244579783824
+      ],
+      "target_xy": [
+        0.025,
+        -0.14
+      ],
+      "min_sustained_lift_m": 0.08379732134106929,
+      "contact_throughout_hold": true,
+      "hold_contact_requirement": "Both fixed finger and moving jaw in every hold sample",
+      "failure": null,
+      "uninterrupted_carry": true,
+      "scorer_version": 3,
+      "final_xy_error_m": 0.012620008478539927,
+      "released": true,
+      "stable": true,
+      "scripted_pick_place_passed": true,
+      "full_task_success": null,
+      "learned_policy": null,
+      "waypoint_errors": [
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 6.102651222133397e-05,
+          "approach_error_rad": 0.09379223244671965
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.045
+          ],
+          "position_error_m": 1.9910247610308625e-06,
+          "approach_error_rad": 0.0937825299244166
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 1.7159575486592645e-06,
+          "approach_error_rad": 0.09378248628053994
+        },
+        {
+          "target": [
+            0.025,
+            -0.14,
+            0.13
+          ],
+          "position_error_m": 0.00040818874359459944,
+          "approach_error_rad": 0.0978708543486531
+        },
+        {
+          "target": [
+            0.025,
+            -0.14,
+            0.045
+          ],
+          "position_error_m": 3.1919828999991094e-05,
+          "approach_error_rad": 0.09707821321050825
+        },
+        {
+          "target": [
+            0.025,
+            -0.14,
+            0.13
+          ],
+          "position_error_m": 4.999641901919532e-05,
+          "approach_error_rad": 0.09707906778055793
+        }
+      ],
+      "simulated_seconds": 19.000000000000348,
+      "wall_seconds": 2.3997916000007535,
+      "supported_lower": true,
+      "attempt": "contact-attempt-32"
+    },
+    {
+      "kind": "SCRIPTED_CONTACT_PROBE_NOT_LEARNED_POLICY",
+      "utc": "2026-09-16T10:29:11.213394+00:00",
+      "mujoco": "3.13.0",
+      "configuration": {
+        "height": 0.045,
+        "offset": 0.0,
+        "close": 0.1,
+        "roll": 1.57,
+        "grasp_offset": [
+          -0.035,
+          0,
+          0.023
+        ],
+        "collision_mode": "decomposed",
+        "tilt": 0.2,
+        "seed": null
+      },
+      "randomization": null,
+      "initial_cube": [
+        -4.909085663696263e-08,
+        -0.07999995093807598,
+        0.03789224457978068
+      ],
+      "final_cube": [
+        0.019695880382461863,
+        -0.07858833500834297,
+        0.0378922445797838
+      ],
+      "target_xy": [
+        0.025,
+        -0.14
+      ],
+      "min_sustained_lift_m": 0.07579489688543706,
+      "contact_throughout_hold": true,
+      "hold_contact_requirement": "Both fixed finger and moving jaw in every hold sample",
+      "failure": null,
+      "uninterrupted_carry": false,
+      "scorer_version": 3,
+      "final_xy_error_m": 0.06164029754928725,
+      "released": true,
+      "stable": true,
+      "scripted_pick_place_passed": false,
+      "full_task_success": null,
+      "learned_policy": null,
+      "waypoint_errors": [
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 8.03035814359982e-05,
+          "approach_error_rad": 0.0937941057282019
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.045
+          ],
+          "position_error_m": 3.087494439078276e-05,
+          "approach_error_rad": 0.0937821955780774
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 3.603767662899127e-05,
+          "approach_error_rad": 0.09378314417786204
+        },
+        {
+          "target": [
+            0.025,
+            -0.14,
+            0.13
+          ],
+          "position_error_m": 0.00038586237870064414,
+          "approach_error_rad": 0.09783944540813544
+        },
+        {
+          "target": [
+            0.025,
+            -0.14,
+            0.045
+          ],
+          "position_error_m": 8.726232473400083e-05,
+          "approach_error_rad": 0.09707799363409005
+        },
+        {
+          "target": [
+            0.025,
+            -0.14,
+            0.13
+          ],
+          "position_error_m": 0.000116542902085075,
+          "approach_error_rad": 0.09707948250859841
+        }
+      ],
+      "simulated_seconds": 19.000000000000348,
+      "wall_seconds": 1.9562172000005376,
+      "supported_lower": true,
+      "attempt": "contact-attempt-33"
+    },
+    {
+      "kind": "SCRIPTED_CONTACT_PROBE_NOT_LEARNED_POLICY",
+      "utc": "2026-09-16T10:29:14.532676+00:00",
+      "mujoco": "3.13.0",
+      "configuration": {
+        "height": 0.045,
+        "offset": 0.0,
+        "close": 0.1,
+        "roll": 1.57,
+        "grasp_offset": [
+          -0.04,
+          0,
+          0.023
+        ],
+        "collision_mode": "decomposed",
+        "tilt": 0.2,
+        "seed": null
+      },
+      "randomization": null,
+      "initial_cube": [
+        -4.909085663696263e-08,
+        -0.07999995093807598,
+        0.03789224457978068
+      ],
+      "final_cube": [
+        0.031000281187923813,
+        -0.1513533973003236,
+        0.037892244579783844
+      ],
+      "target_xy": [
+        0.025,
+        -0.14
+      ],
+      "min_sustained_lift_m": 0.08211105951000827,
+      "contact_throughout_hold": true,
+      "hold_contact_requirement": "Both fixed finger and moving jaw in every hold sample",
+      "failure": null,
+      "uninterrupted_carry": true,
+      "scorer_version": 3,
+      "final_xy_error_m": 0.012841456482546957,
+      "released": true,
+      "stable": true,
+      "scripted_pick_place_passed": true,
+      "full_task_success": null,
+      "learned_policy": null,
+      "waypoint_errors": [
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 6.102651222133397e-05,
+          "approach_error_rad": 0.09379223244671965
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.045
+          ],
+          "position_error_m": 1.9910247610308625e-06,
+          "approach_error_rad": 0.0937825299244166
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 1.715957548552753e-06,
+          "approach_error_rad": 0.09378248628054112
+        },
+        {
+          "target": [
+            0.025,
+            -0.14,
+            0.13
+          ],
+          "position_error_m": 0.0004081887435946442,
+          "approach_error_rad": 0.09787085434865424
+        },
+        {
+          "target": [
+            0.025,
+            -0.14,
+            0.045
+          ],
+          "position_error_m": 3.19198290001058e-05,
+          "approach_error_rad": 0.09707821321050711
+        },
+        {
+          "target": [
+            0.025,
+            -0.14,
+            0.13
+          ],
+          "position_error_m": 4.999641901904238e-05,
+          "approach_error_rad": 0.09707906778055564
+        }
+      ],
+      "simulated_seconds": 19.000000000000348,
+      "wall_seconds": 3.290007200001128,
+      "supported_lower": true,
+      "attempt": "contact-attempt-34"
+    },
+    {
+      "kind": "SCRIPTED_CONTACT_PROBE_NOT_LEARNED_POLICY",
+      "utc": "2026-09-16T10:29:16.565935+00:00",
+      "mujoco": "3.13.0",
+      "configuration": {
+        "height": 0.045,
+        "offset": 0.0,
+        "close": 0.3,
+        "roll": 1.57,
+        "grasp_offset": [
+          -0.035,
+          0,
+          0.023
+        ],
+        "collision_mode": "decomposed",
+        "tilt": 0.2,
+        "seed": null
+      },
+      "randomization": null,
+      "initial_cube": [
+        -4.909085663696263e-08,
+        -0.07999995093807598,
+        0.03789224457978068
+      ],
+      "final_cube": [
+        0.011239630972488061,
+        -0.07018440001136349,
+        0.0378922445797838
+      ],
+      "target_xy": [
+        0.025,
+        -0.14
+      ],
+      "min_sustained_lift_m": 0.06466726574099221,
+      "contact_throughout_hold": true,
+      "hold_contact_requirement": "Both fixed finger and moving jaw in every hold sample",
+      "failure": null,
+      "uninterrupted_carry": false,
+      "scorer_version": 3,
+      "final_xy_error_m": 0.07115873634028792,
+      "released": true,
+      "stable": true,
+      "scripted_pick_place_passed": false,
+      "full_task_success": null,
+      "learned_policy": null,
+      "waypoint_errors": [
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 8.03035814359982e-05,
+          "approach_error_rad": 0.0937941057282019
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.045
+          ],
+          "position_error_m": 3.087494439078276e-05,
+          "approach_error_rad": 0.0937821955780774
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 3.603767662866048e-05,
+          "approach_error_rad": 0.09378314417785849
+        },
+        {
+          "target": [
+            0.025,
+            -0.14,
+            0.13
+          ],
+          "position_error_m": 0.0003858623787005551,
+          "approach_error_rad": 0.0978394454081343
+        },
+        {
+          "target": [
+            0.025,
+            -0.14,
+            0.045
+          ],
+          "position_error_m": 8.726232473418586e-05,
+          "approach_error_rad": 0.09707799363408891
+        },
+        {
+          "target": [
+            0.025,
+            -0.14,
+            0.13
+          ],
+          "position_error_m": 0.00011654290208505529,
+          "approach_error_rad": 0.0970794825086007
+        }
+      ],
+      "simulated_seconds": 19.000000000000348,
+      "wall_seconds": 2.003534999999829,
+      "supported_lower": true,
+      "attempt": "contact-attempt-35"
+    },
+    {
+      "kind": "SCRIPTED_CONTACT_PROBE_NOT_LEARNED_POLICY",
+      "utc": "2026-09-16T10:29:18.363741+00:00",
+      "mujoco": "3.13.0",
+      "configuration": {
+        "height": 0.045,
+        "offset": 0.0,
+        "close": 0.3,
+        "roll": 1.57,
+        "grasp_offset": [
+          -0.04,
+          0,
+          0.023
+        ],
+        "collision_mode": "decomposed",
+        "tilt": 0.2,
+        "seed": null
+      },
+      "randomization": null,
+      "initial_cube": [
+        -4.909085663696263e-08,
+        -0.07999995093807598,
+        0.03789224457978068
+      ],
+      "final_cube": [
+        0.007728634693525219,
+        -0.07927857095107066,
+        0.037892244579783865
+      ],
+      "target_xy": [
+        0.025,
+        -0.14
+      ],
+      "min_sustained_lift_m": -0.0037282195735624246,
+      "contact_throughout_hold": false,
+      "hold_contact_requirement": "Both fixed finger and moving jaw in every hold sample",
+      "failure": null,
+      "uninterrupted_carry": false,
+      "scorer_version": 3,
+      "final_xy_error_m": 0.06312996123310914,
+      "released": true,
+      "stable": true,
+      "scripted_pick_place_passed": false,
+      "full_task_success": null,
+      "learned_policy": null,
+      "waypoint_errors": [
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 6.102651222133397e-05,
+          "approach_error_rad": 0.09379223244671965
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.045
+          ],
+          "position_error_m": 1.9910247610308625e-06,
+          "approach_error_rad": 0.0937825299244166
+        },
+        {
+          "target": [
+            -4.909085663696263e-08,
+            -0.07999995093807598,
+            0.13
+          ],
+          "position_error_m": 1.7159575486565424e-06,
+          "approach_error_rad": 0.09378248628054586
+        },
+        {
+          "target": [
+            0.025,
+            -0.14,
+            0.13
+          ],
+          "position_error_m": 0.00040818874359463387,
+          "approach_error_rad": 0.09787085434865538
+        },
+        {
+          "target": [
+            0.025,
+            -0.14,
+            0.045
+          ],
+          "position_error_m": 3.1919828999892974e-05,
+          "approach_error_rad": 0.09707821321050367
+        },
+        {
+          "target": [
+            0.025,
+            -0.14,
+            0.13
+          ],
+          "position_error_m": 4.999641901921216e-05,
+          "approach_error_rad": 0.09707906778056595
+        }
+      ],
+      "simulated_seconds": 19.000000000000348,
+      "wall_seconds": 1.7615456000021368,
+      "supported_lower": true,
+      "attempt": "contact-attempt-36"
+    }
+  ]
+}

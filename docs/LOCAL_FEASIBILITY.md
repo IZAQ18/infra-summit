@@ -1,3 +1,9 @@
+# 16 September update
+
+[Later track guidance](DEPLOYMENT_FALLBACK.md) permits older Intel deployment.
+The current i5 laptop is our documented fallback; Core Ultra cloud is no longer
+the sole route. Learned full-task execution is still unproven.
+
 # Local feasibility experiment — 16 September 2026
 
 This is a **scripted physics and runtime experiment**, not the hackathon solution.

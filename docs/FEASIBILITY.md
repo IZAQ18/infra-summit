@@ -16,7 +16,7 @@ numerical parity for two input fixtures at the fixed shapes. This is not the Stu
 training package, a trained checkpoint, a VLM, a task controller or final Core Ultra evidence.
 See [commands, limitations and artifacts](LOCAL_FEASIBILITY.md) and [timings](../BENCHMARKS.md).
 
-G1 remains unresolved on usable final hardware and a full-task learned route.
+G1 remains unresolved on a full-task learned route. Later track guidance allows older Intel deployment; see DEPLOYMENT_FALLBACK.md.
 G2/G3 are unpassed; no training or task evaluation was performed. The next local
 experiment should establish real contact-based manipulation and a credible full-task
 demonstration source before committing compute to learning. The old 45-minute

@@ -1,0 +1,106 @@
+{
+  "kind": "SCRIPTED_CONTACT_PROBE_NOT_LEARNED_POLICY",
+  "utc": "2026-09-16T10:35:06.850517+00:00",
+  "mujoco": "3.13.0",
+  "configuration": {
+    "height": 0.045,
+    "offset": 0.0,
+    "close": -0.1,
+    "roll": 1.57,
+    "grasp_offset": [
+      -0.035,
+      0.0,
+      0.023
+    ],
+    "collision_mode": "decomposed",
+    "tilt": 0.2,
+    "seed": null
+  },
+  "randomization": null,
+  "initial_cube": [
+    -4.909085663696263e-08,
+    -0.07999995093807598,
+    0.03789224457978068
+  ],
+  "final_cube": [
+    0.026340107949549395,
+    -0.14904276783403608,
+    0.03789224457978385
+  ],
+  "target_xy": [
+    0.025,
+    -0.14
+  ],
+  "min_sustained_lift_m": 0.0795441658263347,
+  "contact_throughout_hold": true,
+  "uninterrupted_carry": true,
+  "supported_lower": true,
+  "scorer_version": 3,
+  "final_xy_error_m": 0.009141528286710209,
+  "released": true,
+  "stable": true,
+  "scripted_pick_place_passed": true,
+  "sample_period_seconds": 0.05,
+  "hold_contact_requirement": "Both fixed finger and moving jaw in every hold/transfer sample; supported lowering",
+  "failure": null,
+  "full_task_success": null,
+  "learned_policy": null,
+  "waypoint_errors": [
+    {
+      "target": [
+        -4.909085663696263e-08,
+        -0.07999995093807598,
+        0.13
+      ],
+      "position_error_m": 8.03035814359982e-05,
+      "approach_error_rad": 0.0937941057282019
+    },
+    {
+      "target": [
+        -4.909085663696263e-08,
+        -0.07999995093807598,
+        0.045
+      ],
+      "position_error_m": 3.087494439078276e-05,
+      "approach_error_rad": 0.0937821955780774
+    },
+    {
+      "target": [
+        -4.909085663696263e-08,
+        -0.07999995093807598,
+        0.13
+      ],
+      "position_error_m": 3.603767662878274e-05,
+      "approach_error_rad": 0.09378314417785731
+    },
+    {
+      "target": [
+        0.025,
+        -0.14,
+        0.13
+      ],
+      "position_error_m": 0.0003858623787006291,
+      "approach_error_rad": 0.09783944540813999
+    },
+    {
+      "target": [
+        0.025,
+        -0.14,
+        0.045
+      ],
+      "position_error_m": 8.726232473430407e-05,
+      "approach_error_rad": 0.0970779936340912
+    },
+    {
+      "target": [
+        0.025,
+        -0.14,
+        0.13
+      ],
+      "position_error_m": 0.00011654290208516049,
+      "approach_error_rad": 0.09707948250859841
+    }
+  ],
+  "simulated_seconds": 19.000000000000348,
+  "wall_seconds": 47.89161680000325
+}

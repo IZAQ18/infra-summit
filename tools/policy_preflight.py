@@ -15,6 +15,16 @@ from lerobot.policies.act.configuration_act import ACTConfig
 from lerobot.policies.act.modeling_act import ACTPolicy
 
 
+def make_policy(device="cpu"):
+    config = ACTConfig(device=device, chunk_size=10, n_action_steps=1,
+                       pretrained_backbone_weights=None,
+                       input_features={"observation.state": PolicyFeature(FeatureType.STATE, (18,)),
+                                       "observation.images.front": PolicyFeature(FeatureType.VISUAL, (3, 128, 128)),
+                                       "observation.images.side": PolicyFeature(FeatureType.VISUAL, (3, 128, 128))},
+                       output_features={"action": PolicyFeature(FeatureType.ACTION, (12,))})
+    return ACTPolicy(config).to(device)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--images", type=Path, default=Path("artifacts/local-smoke-separated"))
@@ -24,13 +34,7 @@ def main():
     args.output.mkdir(parents=True, exist_ok=True)
     torch.set_num_threads(4)
     torch.manual_seed(7)
-    config = ACTConfig(device="cpu", chunk_size=10, n_action_steps=1,
-                       pretrained_backbone_weights=None,
-                       input_features={"observation.state": PolicyFeature(FeatureType.STATE, (18,)),
-                                       "observation.images.front": PolicyFeature(FeatureType.VISUAL, (3, 128, 128)),
-                                       "observation.images.side": PolicyFeature(FeatureType.VISUAL, (3, 128, 128))},
-                       output_features={"action": PolicyFeature(FeatureType.ACTION, (12,))})
-    policy = ACTPolicy(config).eval()
+    policy = make_policy().eval()
     # Recorded simulator frames; identity-normalized tensors for a shape/runtime probe.
     # This is not a trained preprocessing pipeline or multimodal phase reasoning.
     batch = {"observation.state": torch.zeros(1, 18)}

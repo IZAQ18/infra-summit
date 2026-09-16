@@ -1,0 +1,25 @@
+{
+  "kind": "SYNTHETIC_SINGLE_STEP_NOT_TASK_TRAINING",
+  "utc": "2026-09-16T10:09:21.218291+00:00",
+  "os": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.14",
+  "torch": "2.11.0+cpu",
+  "device": "cpu",
+  "cuda": null,
+  "batch_size": 1,
+  "image_size": [
+    128,
+    128
+  ],
+  "optimizer_steps": 1,
+  "seconds": 3.1013674000023457,
+  "loss": 75.58209228515625,
+  "loss_components": {
+    "l1_loss": 0.5173091292381287,
+    "kld_loss": 7.5064778327941895
+  },
+  "finite_gradients": true,
+  "peak_cuda_allocated_bytes": null,
+  "checkpoint_saved": false,
+  "task_success": null
+}

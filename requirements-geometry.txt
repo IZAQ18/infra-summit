@@ -1,0 +1,2 @@
+# Optional offline collision-mesh regeneration; not needed to run committed parts.
+coacd==1.0.14

@@ -1,0 +1,123 @@
+{
+  "method": "CoACD 1.0.14",
+  "options": {
+    "threshold": 0.004,
+    "real_metric": true,
+    "max_convex_hull": 12,
+    "resolution": 500,
+    "mcts_nodes": 5,
+    "mcts_iterations": 10,
+    "mcts_max_depth": 2,
+    "preprocess_resolution": 20,
+    "seed": 0
+  },
+  "meshes": {
+    "wrist_roll_follower_so101_v1": {
+      "source_sha256": "4b17b410a12d64ec39554abc3e8054d8a97384b2dc4a8d95a5ecb2a93670f5f4",
+      "parts": [
+        {
+          "file": "wrist_roll_follower_so101_v1_00.obj",
+          "sha256": "9fe20d36dfb14dff9d5438e55120b05a8cf91c544a3bd5440442fb9c136f136f"
+        },
+        {
+          "file": "wrist_roll_follower_so101_v1_01.obj",
+          "sha256": "50908fb7c0ca66616791071c2c7f96628dddc0e9f70f7be942e06d07ba59599d"
+        },
+        {
+          "file": "wrist_roll_follower_so101_v1_02.obj",
+          "sha256": "38e9636d7eb0d731de7daa2b5fab8bc2933155425c7b5520726e12caafbb2424"
+        },
+        {
+          "file": "wrist_roll_follower_so101_v1_03.obj",
+          "sha256": "523c1a41aae43a953871d7c5d728e747fe725622e377ac7613d57186ef8edc3e"
+        },
+        {
+          "file": "wrist_roll_follower_so101_v1_04.obj",
+          "sha256": "d821d78b1b0dbe5cb637722cc7e85101d957d0a63c0ef6d003952d9988e81b74"
+        },
+        {
+          "file": "wrist_roll_follower_so101_v1_05.obj",
+          "sha256": "36d1ee62acc9501ee987e202baed1c5fd776fa54519941dc1e4869c6bf1884de"
+        },
+        {
+          "file": "wrist_roll_follower_so101_v1_06.obj",
+          "sha256": "3f9bfc9e7babbcd477a93040714af9962264cc864d1112d5e3240b97a098e30f"
+        },
+        {
+          "file": "wrist_roll_follower_so101_v1_07.obj",
+          "sha256": "2be1636659710e8b8a1358d7439e5d8eade924f96c4117cdf3bb9a9b9e4d1f8f"
+        },
+        {
+          "file": "wrist_roll_follower_so101_v1_08.obj",
+          "sha256": "216d4bee1f962bb1273619e0ad7c335bf2f4c1cfea7ef1231a874e46d2fc7dca"
+        },
+        {
+          "file": "wrist_roll_follower_so101_v1_09.obj",
+          "sha256": "597a38c16e382d33da3946f062577d507020b8b453f095daf65377d162665f82"
+        },
+        {
+          "file": "wrist_roll_follower_so101_v1_10.obj",
+          "sha256": "32ef475d08e2e8b6e82019c89f8645dcbf0d7282f19da2ccb75603cdbbde6d5d"
+        },
+        {
+          "file": "wrist_roll_follower_so101_v1_11.obj",
+          "sha256": "7c117270b367ead96b695df1040854f85fcdcd1ab8022a81321d80716150ca86"
+        }
+      ]
+    },
+    "moving_jaw_so101_v1": {
+      "source_sha256": "785a9dded2f474bc1d869e0d3dae398a3dcd9c0c345640040472210d2861fa9d",
+      "parts": [
+        {
+          "file": "moving_jaw_so101_v1_00.obj",
+          "sha256": "321da29e255fb124fadea33153a2f8e3ffb646f94bc0c13b49f8e4b063cc372f"
+        },
+        {
+          "file": "moving_jaw_so101_v1_01.obj",
+          "sha256": "8c6290e3d5405d886d092947fc33f9a8d5337f5bfd7b611b4d82120d5b8c11eb"
+        },
+        {
+          "file": "moving_jaw_so101_v1_02.obj",
+          "sha256": "a6ee2ffe7b44b5e92bca37e8f39199ebacd321f3813d81722a93f317b1d5d2db"
+        },
+        {
+          "file": "moving_jaw_so101_v1_03.obj",
+          "sha256": "86d337fd4c87aaa905da952248f92fa15b62f78797af3269b0e0727f0afae4f2"
+        },
+        {
+          "file": "moving_jaw_so101_v1_04.obj",
+          "sha256": "873bde1a2846d62365157063853b66ba5ec0af7485ab7caa161c06e0656eaf55"
+        },
+        {
+          "file": "moving_jaw_so101_v1_05.obj",
+          "sha256": "0fb579ff13e888e1d8c54d45d4a2b2b3d3cfab1303ea6ab2b048ab9ebea42a81"
+        },
+        {
+          "file": "moving_jaw_so101_v1_06.obj",
+          "sha256": "c9476e8cc1d94d36cc9b5e32e6657981acc0d4cc07b0d10d9b28e86c66a60741"
+        },
+        {
+          "file": "moving_jaw_so101_v1_07.obj",
+          "sha256": "1bed1bcd5562933af9d8e94df1eeefde2d6b775054e4c735559621fb02911619"
+        },
+        {
+          "file": "moving_jaw_so101_v1_08.obj",
+          "sha256": "d291a52573ed3529d2b7a8f119d2bf9a7ecb5dca70e71d7ac8ef9f1820a9999e"
+        },
+        {
+          "file": "moving_jaw_so101_v1_09.obj",
+          "sha256": "0f40899fd036ac40f08479919d7a04c54b7d30cb383b69e1844f230a0982442e"
+        },
+        {
+          "file": "moving_jaw_so101_v1_10.obj",
+          "sha256": "92670049b48bc6ae46ad9b98c70183c747a7785753b1fafc38135c4d015f2262"
+        },
+        {
+          "file": "moving_jaw_so101_v1_11.obj",
+          "sha256": "1b743cc20a624ac9d1b5cb67bf93f9174c1bfa27dd66991c163d339f46e1fb3b"
+        }
+      ]
+    }
+  },
+  "accuracy_note": "CoACD warned that both meshes exceed the requested concavity threshold due to the 12-hull cap. This is a collision approximation, not a 4 mm guarantee."
+}

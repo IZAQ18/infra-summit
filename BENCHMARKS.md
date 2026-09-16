@@ -1,13 +1,15 @@
 # Benchmarks
 
-No full-task or required Core Ultra benchmark has been run. The measurements below
+No full-task or Core Ultra benchmark has been run. The measurements below
 are local feasibility probes, with no task-trained checkpoint or task success rate.
+Later [event guidance permits older Intel deployment](docs/DEPLOYMENT_FALLBACK.md).
 
 ## 16 September 2026 — local Windows feasibility
 
 Host: Intel Core i5-1245U, approximately 32 GB RAM, Windows 11 build 26200.
 Python 3.12.14. Exact package sets are in `requirements-sim.lock` and
-`requirements-policy-preflight.lock`. This laptop is not the required Core Ultra target.
+`requirements-policy-preflight.lock`. This laptop is not Core Ultra; the later
+Intel-XPU deployment allowance is documented separately above.
 
 Executed code revision: `a1c4e765ba96700a1fc587ed37797b8becff9a3a`.
 The follow-up publication changes documentation/evidence packaging only.
@@ -57,3 +59,21 @@ absence of a drawer/grasp pipeline mean this is not a full dinner-table scene.
 Future runs must record command, commit, date in PKT, hardware, model/version,
 dataset/license, sample count, warmup, runtime, precision and raw artifact hash.
 Report failed runs as failures; distinguish measured, replayed and simulated data.
+
+## Contact and training-runtime probes (16 September)
+
+On the same i5-1245U laptop, scorer v3's nominal scripted cube trial held the cube
+79.54 mm above its starting height, retained sampled jaw contacts through transfer,
+lowered with grasp/table support, and released stably at 9.14 mm XY error. Ten seeds
+with cube XY +/-5 mm and yaw +/-0.12 rad yielded 6 passes and 4 failures. These are
+scripted oracle experiments, not learned or full dinner-table results.
+See docs/CONTACT_EXPERIMENT.md for exact command, scoring, failures and raw evidence.
+Thirteen tests pass, including a regression that rejects a recorded dropped cube
+which an earlier endpoint-only check incorrectly accepted.
+
+A single synthetic ACT forward/backward/AdamW step on CPU took 3.101 seconds, with
+finite gradients (batch 1, two 128x128 images, PyTorch 2.11.0+cpu, four CPU threads).
+Command: `.cache/act-venv/Scripts/python.exe tools/training_preflight.py --device cpu`.
+This is one cold runtime sample, not a training throughput estimate or task learning.
+No checkpoint was saved. Raw output: docs/evidence/training-preflight-cpu.json.
+CUDA execution on the proposed NVIDIA desktop is not yet verified.

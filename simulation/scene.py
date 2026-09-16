@@ -1,5 +1,7 @@
 """Compose two pinned SO101 arms and simple tabletop props in MuJoCo."""
 from copy import deepcopy
+import hashlib
+import json
 from pathlib import Path
 import xml.etree.ElementTree as ET
 
@@ -20,7 +22,9 @@ def camera_axes(position, target) -> str:
     return " ".join(map(str, np.r_[x, y]))
 
 
-def build_scene() -> str:
+def build_scene(*, collision_mode="original", seed=None) -> str:
+    if collision_mode not in ("original", "decomposed"):
+        raise ValueError("Unknown collision mode")
     source = ROOT / ".cache" / "so101" / "so101_new_calib.xml"
     if not source.exists():
         raise FileNotFoundError("Run python tools/fetch_so101.py first")
@@ -33,6 +37,19 @@ def build_scene() -> str:
     for defaults in upstream.findall("default"):
         root.append(deepcopy(defaults))
     root.append(deepcopy(upstream.find("asset")))
+    collision_parts = {}
+    if collision_mode == "decomposed":
+        directory = ROOT / "simulation/collision_parts"
+        manifest = json.loads((directory / "manifest.json").read_text())
+        for mesh_name, spec in manifest["meshes"].items():
+            collision_parts[mesh_name] = []
+            for index, part in enumerate(spec["parts"]):
+                path = directory / part["file"]
+                if hashlib.sha256(path.read_bytes()).hexdigest() != part["sha256"]:
+                    raise ValueError(f"Collision asset hash mismatch: {path.name}")
+                name = f"{mesh_name}_convex_{index}"
+                collision_parts[mesh_name].append(name)
+                ET.SubElement(root.find("asset"), "mesh", name=name, file=path.as_posix())
     visual = ET.SubElement(root, "visual")
     ET.SubElement(visual, "global", offwidth="960", offheight="640")
     ET.SubElement(visual, "headlight", diffuse="0.7 0.7 0.7", ambient="0.35 0.35 0.35")
@@ -43,6 +60,14 @@ def build_scene() -> str:
     actuators = ET.SubElement(root, "actuator")
     for side, x, quat in (("left", -.29, "1 0 0 0"), ("right", .29, "0 0 0 1")):
         body = deepcopy(upstream.find("./worldbody/body"))
+        for parent in body.iter("body"):
+            for geom in list(parent.findall("geom")):
+                if geom.get("class") == "collision" and geom.get("mesh") in collision_parts:
+                    parent.remove(geom)
+                    for part_name in collision_parts[geom.get("mesh")]:
+                        part = deepcopy(geom)
+                        part.set("mesh", part_name)
+                        parent.append(part)
         for node in body.iter():
             if "name" in node.attrib:
                 node.set("name", f"{side}_{node.get('name')}")
@@ -61,7 +86,14 @@ def build_scene() -> str:
                ("spoon", "box", ".007 .038 .003", "-.05 .12 .028", ".70 .72 .74 1"),
                ("fork", "box", ".008 .038 .003", ".03 .12 .028", ".56 .59 .62 1"))
     for name, kind, size, position, color in objects:
+        yaw = 0.
+        if name == "cube" and seed is not None:
+            rng = np.random.default_rng(seed)
+            xy = np.array([0., -.08]) + rng.uniform(-.005, .005, size=2)
+            position = f"{xy[0]} {xy[1]} .04"
+            yaw = rng.uniform(-.12, .12)
         body = ET.SubElement(world, "body", name=name, pos=position)
+        body.set("quat", f"{np.cos(yaw / 2)} 0 0 {np.sin(yaw / 2)}")
         ET.SubElement(body, "freejoint", name=f"{name}_free")
         ET.SubElement(body, "geom", name=f"{name}_geom", type=kind, size=size,
                       rgba=color, mass=".03", friction="1 .005 .0001")
@@ -74,8 +106,10 @@ def build_scene() -> str:
 class LocalScene:
     """12 joint-target inputs. Stop pauses this simulator, not physical hardware."""
 
-    def __init__(self):
-        self.model = mujoco.MjModel.from_xml_string(build_scene())
+    def __init__(self, *, collision_mode="original", seed=None):
+        self.collision_mode = collision_mode
+        self.seed = seed
+        self.model = mujoco.MjModel.from_xml_string(build_scene(collision_mode=collision_mode, seed=seed))
         self.data = mujoco.MjData(self.model)
         self.joint_ids = np.array([self.model.joint(name).id for name in ARM_JOINTS])
         self.qpos_ids = self.model.jnt_qposadr[self.joint_ids]
