@@ -18,4 +18,8 @@ perturbations, and distinguish random-weight ACT/OpenVINO runtime checks from
 learned behavior. See [contact experiment](../CONTACT_EXPERIMENT.md),
 [reproduction](../LOCAL_FEASIBILITY.md) and [raw evidence](../evidence/).
 
-Presence of these files does not establish a finalized portal submission.
+The portal confirmed successful submission on 16 September 2026 at approximately
+22:59 PKT / 17:59 UTC. [Submitted project](https://lablab.ai/ai-hackathons/ai-infra-summit-hackathon/lineproof/lineproof-contact-verified-robot-simulation).
+[Recorded-evidence viewer](https://izaq18.github.io/infra-summit/).
+The portal hosts the MP4, cover and slide PDF directly; the project report and
+editable PPTX are available through the viewer and repository links.

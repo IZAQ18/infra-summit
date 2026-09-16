@@ -1,4 +1,12 @@
-# Infra Summit · LineProof (provisional)
+# Infra Summit · LineProof
+
+**Submitted to Intel Online on 16 September 2026 at approximately 22:59 PKT / 17:59 UTC.**
+The portal confirmed successful submission. This remains a partial scripted prototype,
+not a completed learned dinner-table system.
+
+[Open the recorded-evidence viewer](https://izaq18.github.io/infra-summit/) ·
+[Submitted project](https://lablab.ai/ai-hackathons/ai-infra-summit-hackathon/lineproof/lineproof-contact-verified-robot-simulation) ·
+[Presentation, video and report](docs/submission/)
 
 Proposed: two simulated SO-101 arms set a dinner table through a learned ACT policy
 and camera/instruction reasoning, with stale-action rejection and visual verification.
@@ -10,7 +18,7 @@ validation are tested. A random-weight ACT model runs natively and through OpenV
 Scripted single-arm cube manipulation now has recorded contact evidence. There is
 no learned task policy or full dinner-table workflow.
 
-![Recorded scripted motion — not learned control](docs/evidence/scripted-motion.gif)
+![Recorded scripted carry — not learned control](docs/evidence/contact-carry.gif)
 
 **Latest:** [contact-based lift, carry and placement](docs/CONTACT_EXPERIMENT.md).
 Six of ten small cube perturbations passed the scripted scorer; four failed.
