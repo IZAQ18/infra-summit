@@ -1,3 +1,8 @@
 # Preserve raw measurement bytes so published SHA-256 checks remain reproducible.
 /docs/evidence/*.json -text whitespace=cr-at-eol
 /simulation/collision_parts/*.obj text eol=lf
+*.pdf binary
+*.pptx binary
+*.mp4 binary
+*.png binary
+*.gif binary
